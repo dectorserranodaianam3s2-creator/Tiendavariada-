@@ -1,0 +1,37 @@
+{
+  "firstName": "daiana"
+  "middleName": "angelica"
+  "lastName": "Dector serrano"
+  "birthDate": "31 de mayo del 2008"
+  "phoneNumber": "271 191 6910"
+  "address": "colonia nuevo toxpan"
+  "hobbies": [
+    "leer", 
+    "pintar", 
+    "arte"
+  ]
+  "friends": [
+    {
+      "firstName": "paolette"
+      "middleName": "blanca" 
+      "lastName": "dector serrano"
+      "address": "rincon del bosque"
+      "birthDate": "11 de enero del 2009"
+      "phoneNumber": "271 122 4912"
+      "hobbies": [ 
+        "leer",
+        "dibujar" 
+      ]
+    },
+    {
+      "firstName": "valentina" 
+      "lastName": "contreras hernandez"
+      "address": "unidad de peñuela"
+      "birthDate": "30 de Junio del 2009"
+      "phoneNumber": "271 135 2413"
+      "hobbies": [
+        "bailar folklore", 
+        "leer"
+      ]
+  "asset": true,
+}
