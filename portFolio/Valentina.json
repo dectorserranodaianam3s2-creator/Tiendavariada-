@@ -1,0 +1,24 @@
+{
+  "firstName": "valentina"
+  "lastName": "contreras hernandez"
+  "birthDate": "30 de Junio del 2009"
+  "phoneNumber": "271 1352413"
+  "address": "Peñuela"
+  "hobbies": ["leer", 
+              "bailar"
+  ]
+  "friends":[
+    
+      "firstName": "daiana"
+      "middleName": "angelica" 
+      "lastName": "dector serrano"
+      "address": "colonia nuevo toxpan"
+      "birthDate": "31 de Mayo del 2008"
+      "phoneNumber": "271 122 4912"
+      "hobbies": [ 
+        "leer",
+        "dibujar" 
+      ]
+      }
+
+
