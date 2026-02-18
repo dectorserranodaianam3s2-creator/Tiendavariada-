@@ -5,9 +5,10 @@
   "phoneNumber": "271 1352413"
   "address": "Peñuela"
   "hobbies": ["leer", 
-              "bailar"]
+              "bailar"
+  ]
   "friends":[
-    {
+    
       "firstName": "daiana"
       "middleName": "angelica" 
       "lastName": "dector serrano"
@@ -18,7 +19,6 @@
         "leer",
         "dibujar" 
       ]
-      },
-  "asset": true,
-}
+      }
+
 
