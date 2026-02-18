@@ -1,0 +1,29 @@
+{
+  "firstName": "jose"
+  "middleName": "ignacio"
+  "lastName": "oporto hernandez"
+  "birthDate": "20 de agosto del 2009"
+  "phoneNumber": "271 152 72 10"
+  "address": "praderas de san miguelito"
+  "hobbies": [
+    "jugar fútbol", 
+    "andar en moto", 
+    "manejar carros",
+    "corres en pista", 
+    "ver futbol",
+    "salir de fiesta"
+  ]
+  "friends": [
+    {
+      "firstName": "blanca"
+      "middleName": "Paulette" 
+      "lastName": "calvo lara"
+      "address": "ricon del bosque"
+      "birthDate": "11 de enero del 2009"
+      "phoneNumber": "271 122 4912"
+      "hobbies": [ 
+        "leer",
+        "dibujar"
+      ]
+  "asset": true,
+    }
