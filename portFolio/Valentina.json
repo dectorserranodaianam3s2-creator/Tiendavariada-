@@ -1,0 +1,27 @@
+{
+  "firstName": "valentina" 
+  "lastName": "contreras hernandez"
+  "address": "unidad de peñuela"
+  "birthDate": "30 de Junio del 2009"
+  "phoneNumber": "271 135 2413"
+  "hobbies": [
+  "bailar folklore", 
+  "leer"
+  ]
+  "friends": [
+    {
+      "firstName": "paolette"
+      "middleName": "blanca" 
+      "lastName": "dector serrano"
+      "address": "rincon del bosque"
+      "birthDate": "11 de enero del 2009"
+      "phoneNumber": "271 122 4912"
+      "hobbies": [ 
+        "leer",
+        "dibujar" 
+      ]
+    },
+    { 
+      ]
+  "asset": true,
+}
