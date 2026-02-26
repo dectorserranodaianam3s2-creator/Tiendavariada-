@@ -1,47 +1,47 @@
  {
-  "historiaUsuario": {
-    "titulo": "Tienda Variada Multicategoría",
-    "descripcion": "Como cliente de una tienda variada quiero acceder a un catálogo que incluya línea blanca, ropa, electrónica, belleza, mueblería, juguetería, deportes y librería para adquirir todo lo que necesito en un solo lugar.",
-    "criteriosAceptacion": [
-      "La tienda debe mostrar un menú principal con todas las categorías.",
-      "Cada categoría debe tener productos organizados y filtrables por precio, marca y popularidad.",
-      "El cliente puede agregar productos de distintas categorías al mismo carrito.",
-      "El sistema debe mostrar promociones o descuentos específicos por categoría.",
-      "Se deben ofrecer diferentes métodos de pago.",
-      "El cliente puede elegir entre entrega a domicilio o recogida en tienda.",
-      "El sistema debe generar un ticket con la información del cliente y los productos comprados."
+  "userHistory": {
+    "title": "multicategory Variety Store",
+    "description": "As customer of a variety store, I want to access a catalog that includes line white, ropa, electrónica, belleza, mueblería, juguetería, deportes y librería para adquirir todo lo que necesito en un solo lugar.",
+    "acceptanceCriteria": [
+      "The store must displaye a main menu with all categories .",
+      "Each category must have products organiez and filterable by price,brand, and popularity.",
+      "The customer can add products from different categories to the same cart.",
+      "The system must display promotions or discounts specific to ach category.",
+      "Different payment methods must be offered.",
+      "The customer can choose between home delivey or in-store pickup.",
+      "The system must generate a receipt with the customers information and the purchased products."
     ],
-    "campos": {
-      "cliente": {
-        "nombre": "María Pérez",
-        "direccion": "Av. Reforma #123, Córdoba, Ver.",
-        "telefono": "271-555-1234",
-        "correo": "maria.perez@email.com"
+    "fields": {
+      "customer": {
+        "name": "María Pérez",
+        "address": "Av. Reforma #123, Córdoba, Ver.",
+        "phone": "271-555-1234",
+        "email": "maria.perez@email.com"
       },
-      "productos": [
+      "products": [
         {
-          "categoria": "Línea Blanca",
-          "nombre": "Refrigerador LG",
-          "precio": 12500.00,
-          "cantidad": 1
+          "categories": "Línea Blanca",
+          "name": "Refrigerador LG",
+          "prices": 12500.00,
+          "amount": 1
         },
         {
-          "categoria": "Ropa",
-          "nombre": "Camiseta Nike",
-          "precio": 450.00,
-          "cantidad": 1
+          "categories": "Ropa",
+          "name": "Camiseta Nike",
+          "prices": 450.00,
+          "amount": 1
         },
         {
           "categoria": "Librería",
-          "nombre": "Libro 'Cien años de soledad'",
-          "precio": 320.00,
-          "cantidad": 1
+          "name": "Libro 'Cien años de soledad'",
+          "prices": 320.00,
+          "amount": 1
         }
       ]
     },
     "ticket": {
-      "cliente": "María Pérez",
-      "productos": [
+      "customer": "María Pérez",
+      "products": [
         "Refrigerador LG (Línea Blanca) - $12,500.00",
         "Camiseta Nike (Ropa) - $450.00",
         "Libro 'Cien años de soledad' (Librería) - $320.00"
