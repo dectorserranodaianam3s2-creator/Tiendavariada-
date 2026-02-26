@@ -1,0 +1,25 @@
+{
+  "period": "First week and mid-second week",
+  "workload_feelings": {
+    "question": "How have we felt about the workload?",
+    "answer": "Good. The time allocated has been appropriate. 
+               We have experienced some ups and downs, but by 
+               researching and exploring we have been able to find 
+               answers to certain questions."
+  },
+  "issues": {
+    "question": "What problems have arisen as we progress?",
+    "answer": "Problems have mainly been related to the lack 
+               of resources within the development team, with
+               the most significant being limited internet access.
+               Another issue is some inconsistency and slight 
+               confusion regarding knowledge, but this is gradually 
+              becoming clearer over time."
+  },
+  "communication": {
+    "question": "As a team, is there communication?",
+    "answer": "Yes, there has been strong cooperation in problem-solving,
+               classwork, and project development. Communication has helped 
+               us share ideas, ease the workload, and strengthen team collaboration."
+  }
+}
