@@ -1,11 +1,10 @@
 # 🛒 E-Commerce Product Catalog – Tienda Variada
 
-## 👥 Team Members
-
+ñ
 - Blanca Paolette Calvo Lara – Data Modeler
-- Juan Pérez – Query Developer
-- María López – Integration Specialist
-- Carlos Martínez – Data Seeder / QA
+- Vanessa Aponte Morales – Query Developer
+- Daiana Angelica Dector Serrano – Integration Specialist
+- Valentina Contreras Hernandez – Data Seeder / QA
 
 ---
 
