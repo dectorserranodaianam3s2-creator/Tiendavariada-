@@ -1,3 +1,16 @@
+<div align="center">
+
+# 🌸 Variety Store Database
+### ✿ Sistema de Gestión de Tienda Variada ✿
+
+</div>
+<p align="center">
+
+<img src="https://img.shields.io/badge/database-MongoDB-8BD3DD?style=for-the-badge">
+<img src="https://img.shields.io/badge/status-En%20desarrollo-FFC8DD?style=for-the-badge">
+<img src="https://img.shields.io/badge/version-1.0-CDB4DB?style=for-the-badge">
+
+</p>
 # 🛒 E-Commerce Product Catalog – Tienda Variada
 
 ## 👥 Team Members
@@ -6,6 +19,10 @@
 - Vanessa Aponte Morales – Query Developer
 - Daiana Angelica Dector Serrano– Integration Specialist
 - Valentina Contreras Hernandez – Data Seeder / QA
+
+---
+
+🌸 ───── ✿ ───── 🌸
 
 ---
 
@@ -18,6 +35,10 @@ The project consists of the creation of a web application that simulates a varie
 - Electronics
 - Furniture
 - Sports
+
+---
+
+🌸 ───── ✿ ───── 🌸
 
 ---
 
@@ -36,6 +57,10 @@ products
 With a dynamic field:
 
 attributes
+
+---
+
+🌸 ───── ✿ ───── 🌸
 
 ---
 
