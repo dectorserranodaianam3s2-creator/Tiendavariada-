@@ -1,4 +1,4 @@
-# 📖 Data dictionary: Varied Store
+# Data dictionary: Varied Store
 <div>
   
 ## Table 1: users
@@ -31,7 +31,8 @@
 </div>
 
 ---
-
+<div>
+  
 ## Table 3: orders
 
 | Field | Type | Required | Description |
@@ -43,8 +44,9 @@
 | status | String | Yes | Order status (pending, paid, shipped) |
 | created_at | Date | Yes | Order creation date |
 
+</div>
 ---
-
+<div>
 ## Table 4: payments
 
 | Field | Type | Required | Description |
@@ -55,9 +57,9 @@
 | amount | Number | Yes | Paid amount |
 | payment_status | String | Yes | Payment status (approved, rejected) |
 | payment_date | Date | Yes | Date of payment |
-
+</div>
 ---
-
+<div>
 ## Table 5: tickets
 
 | Field | Type | Required | Description |
