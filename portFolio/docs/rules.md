@@ -1,4 +1,4 @@
-# 📋 Business Rules – Tienda Variada
+#  Business Rules – Tienda Variada
 
 ## General Rules
 
