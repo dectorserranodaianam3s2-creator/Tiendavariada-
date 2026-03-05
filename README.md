@@ -11,7 +11,7 @@
 
 ## 👥 Team Members
 
-  * Blanca Paolette Calvo Lara – Data Modeler
+  - Blanca Paolette Calvo Lara – Data Modeler
   - Vanessa Aponte Morales – Query Developer
   - Daiana Angelica Dector Serrano– Integration Specialist
   - Valentina Contreras Hernandez – Data Seeder / QA
