@@ -11,19 +11,13 @@
 
 ## 📌 Project Description
 
-This project simulates a variety store that sells clothing and electronics using MongoDB.
-
-The goal is to design a flexible NoSQL schema that allows storing different product types in the same collection.
-
-Clothing products include:
-- size
-- color
-- fabric
-
-Electronics include:
-- voltage
-- warranty
-- cpu
+The project consists of the creation of a web application that simulates a varied store; in it, you will find different types of products. The categories we handle are:
+- White Goods
+- Clothing
+- Toys
+- Electronics
+- Furniture
+- Sports
 
 ---
 
