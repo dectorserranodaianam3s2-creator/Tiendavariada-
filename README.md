@@ -13,10 +13,10 @@
 
 ## 👥 Team Members
 
-- Blanca Paolette Calvo Lara – Data Modeler
-- Vanessa Aponte Morales – Query Developer
-- Daiana Angelica Dector Serrano– Integration Specialist
-- Valentina Contreras Hernandez – Data Seeder / QA
+  Blanca Paolette Calvo Lara – Data Modeler
+  Vanessa Aponte Morales – Query Developer
+  Daiana Angelica Dector Serrano– Integration Specialist
+  Valentina Contreras Hernandez – Data Seeder / QA
 
 ---
 
@@ -26,13 +26,13 @@
 
 ## 📌 Project Description
 
-The project consists of the creation of a web application that simulates a varied store; in it, you will find different types of products. The categories we handle are:
-- White Goods
-- Clothing
-- Toys
-- Electronics
-- Furniture
-- Sports
+The project consists of the creation of a web application that simulates a varied store; in it, you will find different types of products. The categories we handle are:   
+  White Goods
+  Clothing
+  Toys
+  Electronics
+  Furniture
+  Sports
 
 ---
 
