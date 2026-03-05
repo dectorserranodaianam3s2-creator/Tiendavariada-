@@ -1,7 +1,7 @@
 <div align="center">
 
-# 🌸 varied store: project
-### ✿ Sistema de Gestión de Tienda Variada ✿
+# 🌸 Varied Store
+### ✿ proyect ✿
 
 <img src="https://img.shields.io/badge/database-MongoDB-8BD3DD?style=for-the-badge">
 <img src="https://img.shields.io/badge/status-En%20desarrollo-FFC8DD?style=for-the-badge">
