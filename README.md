@@ -55,7 +55,9 @@ The development team certifies that it has used AI tools as a mentor to explain 
 Signature: Development Team No. 11
 
 ---
+
 🌸 ───── ✿ ───── 🌸
+
 ---
 
 ## 🏷 Version
