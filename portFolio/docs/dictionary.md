@@ -1,6 +1,6 @@
-# 📖 Data Dictionary – Tienda Variada
-
-## 🟢 Collection: users
+# 📖 Data dictionary: Varied Store
+<div>
+## Table 1: users
 
 | Field | Type | Required | Description |
 |-------|------|----------|------------|
@@ -12,7 +12,7 @@
 
 ---
 
-## 🟢 Collection: products
+## Table 2: products
 
 | Field | Type | Required | Description |
 |-------|------|----------|------------|
@@ -26,7 +26,7 @@
 
 ---
 
-## 🟢 Collection: orders
+## Table 3: orders
 
 | Field | Type | Required | Description |
 |-------|------|----------|------------|
@@ -39,7 +39,7 @@
 
 ---
 
-## 🟢 Collection: payments
+## Table 4: payments
 
 | Field | Type | Required | Description |
 |-------|------|----------|------------|
@@ -52,7 +52,7 @@
 
 ---
 
-## 🟢 Collection: tickets
+## Table 5: tickets
 
 | Field | Type | Required | Description |
 |-------|------|----------|------------|
@@ -61,3 +61,4 @@
 | ticket_number | String | Yes | Unique ticket number |
 | issued_date | Date | Yes | Ticket generation date |
 | total | Number | Yes | Final total amount |
+</div>
