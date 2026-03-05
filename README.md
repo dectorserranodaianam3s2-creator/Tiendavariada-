@@ -48,7 +48,7 @@ The categories we handle are:
 
 ---
 
-## 🛡 Student Pledge
+## Team Pledge
 
 The development team certifies that it has used AI tools as a mentor to explain concepts and debug errors, not as a substitute for logic. We have manually validated every line of code committed here, thus giving it coherence and, of course, dedication, effort, and enthusiasm. 
 
