@@ -1,5 +1,6 @@
 # 📖 Data dictionary: Varied Store
 <div>
+  
 ## Table 1: users
 
 | Field | Type | Required | Description |
