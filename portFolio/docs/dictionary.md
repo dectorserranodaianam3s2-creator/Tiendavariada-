@@ -11,8 +11,11 @@
 | active_status | Boolean | Yes | Indicates if the user account is active |
 | created_at | Date | Yes | Account creation date |
 
----
+</div>
 
+---
+<div>
+  
 ## Table 2: products
 
 | Field | Type | Required | Description |
@@ -24,6 +27,8 @@
 | attributes | Object | Yes | Dynamic attributes depending on category |
 | stock | Number | Yes | Available quantity |
 | created_at | Date | Yes | Product creation date |
+
+</div>
 
 ---
 
