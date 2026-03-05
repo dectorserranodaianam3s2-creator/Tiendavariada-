@@ -46,7 +46,9 @@
 
 </div>
 ---
+
 <div>
+  
 ## Table 4: payments
 
 | Field | Type | Required | Description |
@@ -60,6 +62,7 @@
 </div>
 ---
 <div>
+  
 ## Table 5: tickets
 
 | Field | Type | Required | Description |
