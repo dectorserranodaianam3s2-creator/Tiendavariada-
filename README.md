@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌸 Varied Store
+# 🌸 Varied Store 🌸
 ### ✿ proyect ✿
 
 <img src="https://img.shields.io/badge/database-MongoDB-8BD3DD?style=for-the-badge">
@@ -24,7 +24,8 @@
 
 ## 📌 Project Description
 
-The project consists of the creation of a web application that simulates a varied store; in it, you will find different types of products. The categories we handle are:   
+The project consists of the creation of a web application that simulates a varied store; in it, you will find different types of products.
+The categories we handle are:   
   * White Goods
   * Clothing
   * Toys
@@ -38,21 +39,8 @@ The project consists of the creation of a web application that simulates a varie
 
 ---
 
-## 🧠 Why MongoDB?
-
-MongoDB is ideal because:
-- It supports polymorphic schemas
-- It allows nested objects
-- It provides flexible queries
-- It eliminates rigid SQL tables
-
-We use a single collection called:
-
-products
-
-With a dynamic field:
-
-attributes
+## Why did we choose this topic?
+ Because we consider that a more practical way of shopping is needed. With this application, you can find everything from the best brands at completely affordable prices without forgetting that you can place orders without leaving the comfort of your home.
 
 ---
 
