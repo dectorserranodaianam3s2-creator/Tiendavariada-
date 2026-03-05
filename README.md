@@ -9,7 +9,7 @@
 <div style="background-color:#FFD6E8; padding:15px; border-radius:10px">
 
 
-## 👥 Team Members
+##  Team Members
 
   - Blanca Paolette Calvo Lara – Data Modeler
   - Vanessa Aponte Morales – Query Developer
@@ -22,7 +22,7 @@
 
 ---
 
-## 📌 Project Description
+## Project Description
 
 The project consists of the creation of a web application that simulates a varied store; in it, you will find different types of products.
 The categories we handle are:   
