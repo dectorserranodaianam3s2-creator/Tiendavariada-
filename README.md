@@ -3,21 +3,13 @@
 # 🌸 Variety Store Database
 ### ✿ Sistema de Gestión de Tienda Variada ✿
 
-</div>
-<p align="center">
+
 
 <img src="https://img.shields.io/badge/database-MongoDB-8BD3DD?style=for-the-badge">
 <img src="https://img.shields.io/badge/status-En%20desarrollo-FFC8DD?style=for-the-badge">
 <img src="https://img.shields.io/badge/version-1.0-CDB4DB?style=for-the-badge">
 <div style="background-color:#FFD6E8; padding:15px; border-radius:10px">
 
-## 🌸 Descripción
-
-Este proyecto consiste en una base de datos para una tienda variada usando MongoDB.
-
-</div>
-</p>
-# 🛒 E-Commerce Product Catalog – Tienda Variada
 
 ## 👥 Team Members
 
@@ -81,3 +73,5 @@ Signed: _______________________
 ## 🏷 Version
 
 Release v1.0
+</div>
+<p align="center">
