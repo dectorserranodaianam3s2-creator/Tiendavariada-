@@ -120,7 +120,7 @@ The interface of the store was designed using **Figma**.
 
 You can view the interactive prototype here:
 
-https://www.figma.com/make/klHTWKCQTO3FB29jcqOBnj/Interfaz-gr%C3%A1fica-tienda-variada?t=7nJQwR4iIlh5YFvf-6
+https://wave-flow-16148775.figma.site/
 
 The prototype shows how users can navigate the store, view products, and simulate purchases.
 
