@@ -260,6 +260,9 @@ Signature:
 <p align="center">
 
 🌸 Thank you for visiting our repository 🌸
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FFD6E8&height=120&section=footer"/>
+</p>
 
 </p>
 
