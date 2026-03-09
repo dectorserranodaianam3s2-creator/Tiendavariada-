@@ -1,4 +1,6 @@
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FFD6E8&height=200&section=header&text=Varied%20Store&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
+</p>
 <div align="center">
 
 # 🌸 Varied Store 🌸
