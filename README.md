@@ -172,8 +172,9 @@ This approach helps maintain **data normalization and flexibility**.
 🌸 ───── ✿ ───── 🌸
 
 ## 📂 Project Structure
-
+<center>
 ```
+
 VariedStore
 │
 ├── database
@@ -189,7 +190,7 @@ VariedStore
 │
 └── README.md
 ```
-
+</center>
 This structure organizes the project into **database configuration, queries, and documentation**.
 
 ---
