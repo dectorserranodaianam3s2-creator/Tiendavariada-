@@ -100,7 +100,14 @@ SALES ||--|| TICKETS : generates
 ```
 
 This diagram represents the **structure of the database** and the relationships between the main entities of the system.
+## Database Diagram Preview
 
+<p align="center">
+<img src="https://mermaid.ink/img/pako:eNpVkE1PwzAMhf-K5TqYl9nAhhMZsZqg0nQz8pN7k0w0bkl1tE3rHhG3hG3x7HfC6l5k8pL3zvZ9n5x3mJ0zT1Vn4R2qkQk4oVJbB8xgYvXc4bJ3oW0FhU0K5o2mQj3m2yJzT0WZ0m1y4p4XhW5cRkU2i4G0i4V2H0qV9xqYdVqWq9jJdKq2c2y8W1C1W6cYdK8s7H5n9g1y3a8M0Y0j0yY0J9YFJgZ7VxQx0oY2u5tq0uF0f0yq6zq0t6w3y9y2sY1W6nq1u2y5k9X0q4c0c3m7k3p7v1m9n7W3c7o6y4y9k1o4n1u8p9u6o6y1n3u1l0u0ZQAA"
+width="600">
+</p>
+
+This preview represents the structure of the store database.
 ---
 
 🌸 ───── ✿ ───── 🌸
