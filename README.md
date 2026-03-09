@@ -110,6 +110,26 @@ This preview represents the structure of the store database.
 
 🌸 ───── ✿ ───── 🌸
 
+ ---
+
+
+
+## 🎨 Interface Prototype
+
+The interface of the store was designed using **Figma**.
+
+You can view the interactive prototype here:
+
+🔗 https://www.figma.com/file/XXXXX/VariedStorePrototype
+
+The prototype shows how users can navigate the store, view products, and simulate purchases.
+
+---
+
+🌸 ───── ✿ ───── 🌸
+
+---
+
 ## 🧩 Embedding Strategy
 
 In this project we use **embedding** to store related data inside the same document.
