@@ -238,14 +238,15 @@ Signature:
 
 🌸 ───── ✿ ───── 🌸
 
-## 📊 Repository Statistics
+---
+
+## 👀 Repository Visits
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=dectorserranodaianam3s2-creator&show_icons=true&title_color=FFAFCC&icon_color=FFC8DD&text_color=444&bg_color=FFD6E8"/>
+<img src="https://komarev.com/ghpvc/?username=dectorserranodaianam3s2-creator&color=ffb6c1&style=for-the-badge">
 
 </p>
-
 ---
 
 🌸 ───── ✿ ───── 🌸
