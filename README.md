@@ -1,6 +1,4 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FFD6E8&height=200&section=header&text=Varied%20Store&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
-</p>
 <div align="center">
 
 # 🌸 Varied Store 🌸
@@ -247,10 +245,12 @@ Signature:
 <img src="https://github-readme-stats.vercel.app/api?username=dectorserranodaianam3s2-creator&show_icons=true&title_color=FFAFCC&icon_color=FFC8DD&text_color=444&bg_color=FFD6E8"/>
 
 </p>
+
 ---
 
 🌸 ───── ✿ ───── 🌸
 
+---
 ## 🏷 Version
 
 **Release v1.0**
@@ -260,9 +260,6 @@ Signature:
 <p align="center">
 
 🌸 Thank you for visiting our repository 🌸
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FFD6E8&height=120&section=footer"/>
-</p>
 
 </p>
 
