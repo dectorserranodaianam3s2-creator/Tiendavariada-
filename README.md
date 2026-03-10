@@ -1,22 +1,48 @@
 <div align="center">
 <div align="center">
 
-# 🌸 Varied Store 🌸
+---
 
-### ✿ Database Project ✿
+## 🛒 Database Description
 
-<img src="https://img.shields.io/badge/database-MongoDB-8BD3DD?style=for-the-badge">
-<img src="https://img.shields.io/badge/status-In%20Development-FFC8DD?style=for-the-badge">
-<img src="https://img.shields.io/badge/version-1.0-CDB4DB?style=for-the-badge">
-<img src="https://img.shields.io/badge/type-NoSQL%20Database-FFAFCC?style=for-the-badge">
+This project represents a **NoSQL database for a varied store** that sells:
 
-</div>
+- Electronics
+- Home appliances
+- Clothing
+- Furniture
+- Home products
 
-<div style="background-color:#FFD6E8; padding:20px; border-radius:15px">
+The database was created using **MongoDB Atlas**.
 
 ---
 
-🌸 ───── ✿ ───── 🌸
+## 📦 Collections
+
+The database contains the following collections:
+
+- clients
+- productos
+- categorias
+- ventas
+- detalle_ventas
+- empleados
+- proveedores
+
+---
+
+## 🔗 Relationships
+
+- One **client** can make many **sales**
+- One **sale** can contain many **products**
+- One **product** can appear in many **sales**
+
+This creates a **many-to-many relationship between SALES and PRODUCTS**, solved with the collection:
+
+**detalle_ventas**
+
+---
+
 
 ## 🌼 Team Members
 
@@ -27,26 +53,7 @@
 
 ---
 
-🌸 ───── ✿ ───── 🌸
 
-## 📌 Project Description
-
-This project consists of the design and implementation of a **MongoDB database** that simulates the operation of a **varied store**.
-
-The system manages different product categories and records customer purchases, payment methods, and sales tickets.
-
-The categories included in the store are:
-
-* 🧺 White Goods
-* 👕 Clothing
-* 🧸 Toys
-* 💻 Electronics
-* 🪑 Furniture
-* ⚽ Sports
-
-The objective is to demonstrate the implementation of **NoSQL database modeling**, using **embedding and referencing strategies**.
-
----
 
 🌸 ───── ✿ ───── 🌸
 
@@ -60,45 +67,18 @@ This project also allows us to demonstrate **database design, data modeling, and
 
 ---
 
-🌸 ───── ✿ ───── 🌸
-
-## 🗂 Database Model
+## 📊 Entity Relationship Model
 
 ```mermaid
 erDiagram
-CUSTOMERS {
- string customer_id
- string name
- string phone
-}
-PRODUCTS {
- string product_id
- string name
- number price
-}
-SALES {
- string sale_id
- string customer_id
- number total
-}
-PAYMENT_METHODS {
- string payment_id
- string method_name
-}
-TICKETS {
- string ticket_id
- string sale_id
- date date
-}
 
-CUSTOMERS ||--o{ SALES : makes
-SALES ||--|{ PRODUCTS : contains
-SALES }o--|| PAYMENT_METHODS : uses
-SALES ||--|| TICKETS : generates
+CLIENTES ||--o{ VENTAS : realiza
+VENTAS ||--o{ DETALLE_VENTAS : contiene
+PRODUCTOS ||--o{ DETALLE_VENTAS : incluye
+CATEGORIAS ||--o{ PRODUCTOS : clasifica
+PROVEEDORES ||--o{ PRODUCTOS : suministra
+EMPLEADOS ||--o{ VENTAS : registra
 ```
-
-This diagram represents the **structure of the database** and the relationships between the main entities of the system.
-## Database Diagram Preview
 
 <p align="center">
 <img src="https://mermaid.ink/img/pako:eNpVkE1PwzAMhf-K5TqYl9nAhhMZsZqg0nQz8pN7k0w0bkl1tE3rHhG3hG3x7HfC6l5k8pL3zvZ9n5x3mJ0zT1Vn4R2qkQk4oVJbB8xgYvXc4bJ3oW0FhU0K5o2mQj3m2yJzT0WZ0m1y4p4XhW5cRkU2i4G0i4V2H0qV9xqYdVqWq9jJdKq2c2y8W1C1W6cYdK8s7H5n9g1y3a8M0Y0j0yY0J9YFJgZ7VxQx0oY2u5tq0uF0f0yq6zq0t6w3y9y2sY1W6nq1u2y5k9X0q4c0c3m7k3p7v1m9n7W3c7o6y4y9k1o4n1u8p9u6o6y1n3u1l0u0ZQAA"
