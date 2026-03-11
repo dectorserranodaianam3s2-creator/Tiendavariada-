@@ -163,7 +163,11 @@ tienda_variada
 ---
 
 # 👥 Miembros del Equipo
-
+Jose Ignacio_The Data Modeler
+Daiana Angelica_The integration Specialist 
+Blanca Paollete_The Query Developer 
+Valentina Contreras_The Data Seder
+Vanessa Aponte_The Data Seder
 
 
 
