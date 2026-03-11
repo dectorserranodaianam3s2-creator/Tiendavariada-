@@ -50,7 +50,6 @@ La base de datos contiene las siguientes colecciones:
 
 # 📊 Modelo Entidad-Relación
 
-erDiagram
     
 
     CATEGORIA {
