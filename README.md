@@ -50,60 +50,70 @@ La base de datos contiene las siguientes colecciones:
 
 # 📊 Modelo Entidad-Relación
 
-```mermaid
 erDiagram
+    
 
-CATEGORIA {
-int _id
-string nombre
-string descripcion
-}
+    CATEGORIA {
+        int categoriaID PK
+        string nombre
+        string descripcion
+        date fechaCreacion
+    }
 
-PRODUCTOS {
-int _id
-string nombre
-float precio
-int categoria_id
-}
+    PRODUCTOS {
+        int productoID PK
+        int categoriaID FK
+        string nombre
+        string descripcion
+        decimal precio
+        int proveedorID FK
+        date fechaCreacion
+    }
 
-PROVEEDORES {
-int _id
-string nombre
-string telefono
-string direccion
-}
+    INVENTARIO {
+        int inventarioID PK
+        int productoID FK
+        int cantidad
+        int cantidadMinima
+        date ultimaActualizacion
+    }
 
-PRODUCTO_PROVEEDOR {
-int _id
-int producto_id
-int proveedor_id
-}
+    VENTAS {
+        int ventaID PK
+        int productoID FK
+        int empleadoID FK
+        int cantidad
+        decimal montoTotal
+        date fechaVenta
+    }
 
-INVENTARIO {
-int _id
-int producto_id
-int cantidad
-}
+    EMPLEADOS {
+        int empleadoID PK
+        string nombre
+        string apellido
+        string email
+        string telefono
+        string puesto
+        decimal salario
+        date fechaContratacion
+    }
 
-EMPLEADOS {
-int _id
-string nombre
-string puesto
-}
-
-VENTAS {
-int _id
-date fecha
-int empleado_id
-}
-
-CATEGORIA ||--o{ PRODUCTOS : clasifica
-PRODUCTOS ||--|| INVENTARIO : tiene
-EMPLEADOS ||--o{ VENTAS : registra
-PRODUCTOS ||--o{ PRODUCTO_PROVEEDOR : relacion
-PROVEEDORES ||--o{ PRODUCTO_PROVEEDOR : relacion
+    PROVEEDORES {
+        int proveedorID PK
+        string nombre
+        string direccion
+        string telefono
+        string email
+        string contacto
+        date fechaRegistro
+    }
 ```
-
+ CATEGORIA ||--o{ PRODUCTOS : contiene
+    PRODUCTOS ||--o{ INVENTARIO : tiene
+    PRODUCTOS ||--o{ VENTAS : incluye
+    VENTAS ||--o{ EMPLEADOS : realiza
+    PRODUCTOS ||--o{ PROVEEDORES : suministra
+    INVENTARIO ||--o{ VENTAS : reduce
 ---
 
 # 🔄 Relación Muchos a Muchos
