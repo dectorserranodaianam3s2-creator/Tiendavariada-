@@ -48,10 +48,9 @@ La base de datos contiene las siguientes colecciones:
 
 ---
 
-# 📊 Modelo Entidad-Relación
-```
+# 📊 Modelo Entidad-Relació
     
-
+```edigram
     CATEGORIA {
         int categoriaID PK
         string nombre
@@ -107,13 +106,8 @@ La base de datos contiene las siguientes colecciones:
         date fechaRegistro
     }
 ```
- CATEGORIA ||--o{ PRODUCTOS : contiene
-    PRODUCTOS ||--o{ INVENTARIO : tiene
-    PRODUCTOS ||--o{ VENTAS : incluye
-    VENTAS ||--o{ EMPLEADOS : realiza
-    PRODUCTOS ||--o{ PROVEEDORES : suministra
-    INVENTARIO ||--o{ VENTAS : reduce
----
+ 
+
 
 # 🔄 Relación Muchos a Muchos
 
@@ -152,9 +146,8 @@ async function conectar() {
 }
 
 conectar();
-```
 
----
+```
 
 # 📊 Estructura de la Base de Datos
 
