@@ -49,7 +49,7 @@ La base de datos contiene las siguientes colecciones:
 ---
 
 # 📊 Modelo Entidad-Relació
-    
+    ---
 ```edigram
     CATEGORIA {
         int categoriaID PK
@@ -107,7 +107,7 @@ La base de datos contiene las siguientes colecciones:
     }
 ```
  
-
+---
 
 # 🔄 Relación Muchos a Muchos
 
