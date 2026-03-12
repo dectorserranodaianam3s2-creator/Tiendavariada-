@@ -46,9 +46,9 @@ La base de datos contiene las siguientes colecciones:
 | empleados   | Información de empleados     |
 | proveedores | Proveedores de productos     |
 
----
+   ---
 
-# 📊 Modelo Entidad-Relació
+# 📊 Modelo Entidad-Relación
     ---
 ```edigram
     CATEGORIA {
@@ -107,7 +107,7 @@ La base de datos contiene las siguientes colecciones:
     }
 ```
  
----
+
 
 # 🔄 Relación Muchos a Muchos
 
