@@ -3,6 +3,7 @@
 Proyecto de base de datos NoSQL desarrollado con **MongoDB Atlas** para gestionar la información de una tienda con diferentes categorías de productos, inventario, ventas, empleados y proveedores.
 
 ---
+
 # Descripción del Proyecto
 
 Este proyecto consiste en el diseño e implementación de una base de datos NoSQL para una tienda variada, utilizando MongoDB. El sistema permite administrar información relacionada con productos, categorías, proveedores, inventario, ventas y empleados.
