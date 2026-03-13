@@ -133,12 +133,12 @@ Este archivo contiene la configuración de conexión a la base de datos MongoDB 
   "connectionString": "mongodb://localhost:27017",
   "database": "hospital_pediatrico",
   "collections": [
-    "pacientes",
-    "medicos",
-    "consultas",
-    "habitaciones",
-    "enfermeria",
-    "ganancias"
+    "categoria",
+    "productos",
+    "inventario",
+    "ventas",
+    "empleados",
+    "proveedores"
   ]
 }
 ```
