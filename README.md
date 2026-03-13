@@ -48,68 +48,64 @@ La base de datos contiene las siguientes colecciones:
 
    ---
 
-# 📊 Modelo Entidad-Relación
-   
-erDiagram
-
-CATEGORIAS {
-    int categoriaID PK
-    string nombre
-    string descripcion
-    date fechaCreacion
-}
-
-PRODUCTOS {
-    int productoID PK
-    string nombre
-    string descripcion
-    decimal precio
-    int categoriaID FK
-    date fechaCreacion
-}
-
-PROVEEDORES {
-    int proveedorID PK
-    string nombre
-    string telefono
-    string email
-}
-
-PRODUCTO_PROVEEDOR {
-    int id PK
-    int productoID FK
-    int proveedorID FK
-}
-
-INVENTARIO {
-    int inventarioID PK
-    int productoID FK
-    int cantidad
-    date ultimaActualizacion
-}
-
-VENTAS {
-    int ventaID PK
-    int productoID FK
-    int cantidad
-    decimal total
-    date fechaVenta
-}
-
-EMPLEADOS {
-    int empleadoID PK
-    string nombre
-    string puesto
-    string telefono
-}
+## Modelo Entidad–Relación
 
 ```mermaid
 erDiagram
-CATEGORIAS ||--o{ PRODUCTOS : tiene
-PRODUCTOS ||--o{ INVENTARIO : controla
-PRODUCTOS ||--o{ VENTAS : registra
-PRODUCTOS ||--o{ PRODUCTO_PROVEEDOR : relacion
-PROVEEDORES ||--o{ PRODUCTO_PROVEEDOR : suministra
+    CATEGORIAS {
+        int categoriaID
+        string nombre
+        string descripcion
+        date fechaCreacion
+    }
+
+    PRODUCTOS {
+        int productoID
+        string nombre
+        string descripcion
+        float precio
+        int categoriaID
+    }
+
+    PROVEEDORES {
+        int proveedorID
+        string nombre
+        string telefono
+        string email
+    }
+
+    PRODUCTO_PROVEEDOR {
+        int productoID
+        int proveedorID
+    }
+
+    INVENTARIO {
+        int inventarioID
+        int productoID
+        int cantidad
+        date ultimaActualizacion
+    }
+
+    VENTAS {
+        int ventaID
+        int productoID
+        int cantidad
+        float total
+        date fechaVenta
+    }
+
+    EMPLEADOS {
+        int empleadoID
+        string nombre
+        string puesto
+        string telefono
+    }
+
+    CATEGORIAS ||--o{ PRODUCTOS : clasifica
+    PRODUCTOS ||--o{ INVENTARIO : tiene
+    PRODUCTOS ||--o{ VENTAS : registra
+    PRODUCTOS ||--o{ PRODUCTO_PROVEEDOR : relacion
+    PROVEEDORES ||--o{ PRODUCTO_PROVEEDOR : suministra
 ```
  
 
