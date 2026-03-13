@@ -49,7 +49,7 @@ La base de datos contiene las siguientes colecciones:
    ---
 
 # 📊 Modelo Entidad-Relación
-    ---
+   
 erDiagram
 
 CATEGORIAS {
@@ -103,12 +103,13 @@ EMPLEADOS {
     string telefono
 }
 
-CATEGORIAS ||--o{ PRODUCTOS : clasifica
-PRODUCTOS ||--o{ INVENTARIO : tiene
+```mermaid
+erDiagram
+CATEGORIAS ||--o{ PRODUCTOS : tiene
+PRODUCTOS ||--o{ INVENTARIO : controla
 PRODUCTOS ||--o{ VENTAS : registra
 PRODUCTOS ||--o{ PRODUCTO_PROVEEDOR : relacion
 PROVEEDORES ||--o{ PRODUCTO_PROVEEDOR : suministra
-        
 ```
  
 
