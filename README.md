@@ -32,6 +32,12 @@ mongodb+srv://dectorserranodaianam3s2_db_user:<db_password>@cluster0.xxxxx.mongo
 ⚠️ La contraseña se mantiene oculta por seguridad.
 
 ---
+# Prototipo de nuestro proyecto
+
+https://wave-flow-16148775.figma.site/
+
+---
++
 
 # 🧰 Tecnologías Utilizadas
 
@@ -118,7 +124,25 @@ erDiagram
     PRODUCTOS ||--o{ PRODUCTO_PROVEEDOR : relacion
     PROVEEDORES ||--o{ PRODUCTO_PROVEEDOR : suministra
 ```
- 
+ ## Conexión a la base de datos (ns.json)
+
+Este archivo contiene la configuración de conexión a la base de datos MongoDB utilizada en el proyecto.
+
+```json
+{
+  "connectionString": "mongodb://localhost:27017",
+  "database": "hospital_pediatrico",
+  "collections": [
+    "pacientes",
+    "medicos",
+    "consultas",
+    "habitaciones",
+    "enfermeria",
+    "ganancias"
+  ]
+}
+```
+---
 
 
 # 🔄 Relación Muchos a Muchos
@@ -191,4 +215,7 @@ Vanessa Aponte_The Data Seder
 
 Proyecto desarrollado como práctica de **modelado de bases de datos NoSQL utilizando MongoDB Atlas**.
 
+---
+
+#
 <p align="center">
