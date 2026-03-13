@@ -26,7 +26,7 @@ tienda_variada
 **Connection String**
 
 ```
-mongodb+srv://dectorserranodaianam3s2_db_user:<db_password>@cluster0.xxxxx.mongodb.net/tienda_variada
+mongodb+srv://dectorserranodaianam3s2_db_user:<db_password>@cluster0.W1txzzzz.mongodb.net/tienda_variada
 ```
 
 ⚠️ La contraseña se mantiene oculta por seguridad.
