@@ -196,16 +196,15 @@ tienda_variada
 ├── ventas
 ├── empleados
 └── proveedores
-```
 
 ---
 
 # 👥 Miembros del Equipo
-Jose Ignacio_The Data Modeler
+Nadia Itzel Trujillo Velázquez_The Data Modeler
 Daiana Angelica_The integration Specialist 
 Blanca Paollete_The Query Developer 
 Valentina Contreras_The Data Seder
-Vanessa Aponte_The Data Seder
+Vanessa Aponte Morales_The Data Seder
 
 
 
