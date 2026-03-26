@@ -198,9 +198,10 @@ tienda_variada
 └── proveedores
 
 ---
+```
 
 #📝 Reporte de Consultas en MongoDB
-
+```
 📌 Introducción
 
 En el presente reporte se describen las operaciones realizadas en una base de datos utilizando MongoDB, con el objetivo de gestionar información dentro de la colección usuarios.
