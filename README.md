@@ -198,7 +198,8 @@ tienda_variada
 └── proveedores
 
 ---
-📝 Reporte de Consultas en MongoDB
+
+#📝 Reporte de Consultas en MongoDB
 
 📌 Introducción
 
