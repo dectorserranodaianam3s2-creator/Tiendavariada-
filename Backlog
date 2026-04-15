@@ -1,0 +1,114 @@
+# 🛒 Product Backlog – Online Store
+
+## 📌 Overview
+This product backlog defines the key features and user stories for a varied online store. It is organized by epics, user stories, and priority levels following Scrum methodology.
+
+---
+
+## 🔝 Epics
+- User Experience (UX/UI)
+- Product Catalog
+- Payments & Checkout
+- Shipping & Logistics
+- Marketing & Promotions
+- Security & Trust
+- Administration
+
+---
+
+## 📋 User Stories
+
+### 🧑‍💻 User Experience (UX/UI)
+- **US01**: As a customer, I want to easily navigate the store so I can find products quickly.
+- **US02**: As a customer, I want an attractive design so I feel confident shopping.
+- **US03**: As a customer, I want to search products by name or category to save time.
+
+---
+
+### 🛍️ Product Catalog
+- **US04**: As a customer, I want to see clear product images to make better decisions.
+- **US05**: As a customer, I want detailed descriptions to understand what I am buying.
+- **US06**: As a customer, I want to see product availability to avoid confusion.
+
+---
+
+### 💳 Payments & Checkout
+- **US07**: As a customer, I want multiple payment methods (card, transfer, etc.) to choose the most convenient.
+- **US08**: As a customer, I want a fast checkout process to save time.
+- **US09**: As a customer, I want to see the final total before paying to avoid surprises.
+
+---
+
+### 🚚 Shipping & Logistics
+- **US10**: As a customer, I want to know shipping costs before paying.
+- **US11**: As a customer, I want to track my order to know when it will arrive.
+- **US12**: As a customer, I want different delivery options to choose the best one.
+
+---
+
+### 📢 Marketing & Promotions
+- **US13**: As a customer, I want to see offers and discounts to save money.
+- **US14**: As a customer, I want personalized recommendations.
+- **US15**: As a customer, I want to save products to a wishlist.
+
+---
+
+### 🔐 Security & Trust
+- **US16**: As a customer, I want my data to be secure so I can shop safely.
+- **US17**: As a customer, I want to see reviews from other users to trust the product.
+
+---
+
+### 📊 Administration
+- **US18**: As an admin, I want to easily add products.
+- **US19**: As an admin, I want to update prices and stock.
+- **US20**: As an admin, I want to see sales reports.
+
+---
+
+## ⚡ Prioritization (MVP)
+
+### 🔥 High Priority
+- US01: Easy navigation  
+- US03: Product search  
+- US04: Product images  
+- US05: Product descriptions  
+- US07: Payment methods  
+- US08: Fast checkout  
+- US09: Order total visibility  
+- US10: Shipping costs  
+- US16: Data security  
+
+---
+
+### ⚖️ Medium Priority
+- US06: Stock visibility  
+- US11: Order tracking  
+- US13: Promotions  
+- US17: Reviews  
+
+---
+
+### 🌱 Low Priority
+- US14: Personalized recommendations  
+- US15: Wishlist  
+- US20: Advanced reports  
+
+---
+
+## 🧩 Backlog Table
+
+| ID   | User Story                          | Priority | Value |
+|------|------------------------------------|----------|--------|
+| US01 | Easy navigation                    | High     | ⭐⭐⭐⭐⭐ |
+| US03 | Product search                     | High     | ⭐⭐⭐⭐⭐ |
+| US04 | Product images                     | High     | ⭐⭐⭐⭐⭐ |
+| US07 | Payment methods                    | High     | ⭐⭐⭐⭐⭐ |
+| US11 | Order tracking                     | Medium   | ⭐⭐⭐   |
+| US14 | Recommendations                    | Low      | ⭐⭐    |
+
+---
+
+## 💡 Notes
+- Start with a **Minimum Viable Product (MVP)** focused on usability and core purchasing features.
+- Additional features can be implemented in future iterations.
