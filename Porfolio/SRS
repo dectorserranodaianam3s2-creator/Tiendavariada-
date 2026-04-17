@@ -93,7 +93,7 @@ To ensure scalability, performance, and maintainability, the following technolog
 
 ### Frontend
 
-* React or Next.js
+* Next.js
 
 ### Database
 
@@ -110,6 +110,7 @@ To ensure scalability, performance, and maintainability, the following technolog
 * Stripe or PayPal
 
 ### Infrastructure
+revisar las infraestructuras
 
 * Amazon Web Services for backend hosting
 * Vercel for frontend deployment
