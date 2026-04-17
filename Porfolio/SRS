@@ -5,7 +5,8 @@
 
 ## 1. Introduction
 
-This document describes the complete specification of an online store system, including product backlog, software requirements (SRS), API design, and technological architecture. The purpose is to provide a clear and structured guide for the development of the system.
+This document describes the complete specification of an online store system, including product backlog, software requirements (SRS), API design, and technological architecture.
+The purpose is to provide a clear and structured guide for the development of the system.
 
 The application is a web-based e-commerce platform that allows customers to browse products, make purchases, and track orders, while administrators manage products, inventory, and sales.
 
