@@ -7,17 +7,17 @@ WEEK8
   BLOQUEOS:Ninguno, se logro cordinar al eqipo completo para la secion 
   AVANCE:Impactan en la secion
  Daily 24/marzo/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Inciar la elaboracion del entregable y arrancar con la Quuery Depolover 
+  BLOQUEOS:Defenir estrectura inicial del las consultas basicas para aliniar criterios del equipo
+  AVANCE:Se comenzo el desarrollo ddel entregable y se configuero el entorno Query Depolover para los scrips de busqueda simple
  Daily 25/marzo/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Aplicar los cambios solicidos a la interfaz del proyecto
+  BLOQUEOS:Esperar validacion de diseño para confirmar que los cambios no rompan flujos existentes
+  AVANCE:Se impletaron los ajustes de interfaz relacionados basicas SQL
  Daily 26/marzo/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Conectar la base datos a la interfasz para probar los scrips de busqueda simple
+  BLOQUEOS:Erros de conexion entre BD e interfaz. Pendientes revisar credencial y cademna de conexion
+  AVANCE:Se intento la conexion y se dectectaron los puntos a corregir para lograr integrar los datos con la interfaz
  Daily 27/marzo/26
   ACUERDO EQUIPO:Pausa de actividades hasta recibir hasta recibir el siguente entregables
   BLOQUEOS:Sin objetivo de Sprint activo
