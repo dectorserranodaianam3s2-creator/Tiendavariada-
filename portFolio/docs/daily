@@ -1,13 +1,10 @@
-
-
-
 WEEK8
  Daily 23/marzo/26
   ACUERDO EQUIPO:Realizar junta de equipos para revisar los 3 cambops importantes del proyecto de consultas basicas SQL
   BLOQUEOS:Ninguno, se logro cordinar al eqipo completo para la secion 
   AVANCE:Impactan en la secion
  Daily 24/marzo/26
-  ACUERDO EQUIPO:Inciar la elaboracion del entregable y arrancar con la Quuery Depolover 
+  ACUERDO EQUIPO:Inciar la elaboracion del entregable y arrancar con la Query Depolover 
   BLOQUEOS:Defenir estrectura inicial del las consultas basicas para aliniar criterios del equipo
   AVANCE:Se comenzo el desarrollo ddel entregable y se configuero el entorno Query Depolover para los scrips de busqueda simple
  Daily 25/marzo/26
@@ -25,22 +22,22 @@ WEEK8
 
 WEEK9
  Daily 13/abril/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Revisar y practicar los operadores de comparacion para consultas con datos numericos
+  BLOQUEOS:Dudas iniciales sobre la diferenciaentre algunos operadores
+  AVANCE:Se repaso la sintaxis de operadores y se identificaron los casos de uso para filtrado numerico
  Daily 14/abril/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Modificamos el modelo ER para que soporte los nnuevos filtros numericos requeridos
+  BLOQUEOS:Valida con el equipo si el ajuste al modelo ER afecta relaciones existntes
+  AVANCE: Se propucieron los cambios al modelo ER y se actulizo la documentacion de tablas afectadas
  Daily 15/abril/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Llenar la base de datos de prueba para validar consultas de comparacion
+  BLOQUEOS: Falta de datos numericos variados para probar caos limite con valores nulos o negativos
+  AVANCE:Se cargaron registros de prueba BD y se ejecutaron los primeros SELEC con WHERE
  Daily 16/abril/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Volver a insistir  con la conexion entre la interfaz y BD depues de los ajustes al modelo
+  BLOQUEOS:La conexion sigue sin funcionar. Error en driver o cadena de conexion compatible
+  AVANCE:Se documentaron los errore espesificos de conexion para sacarlos de area tecnica
  Daily 17/abril/26
-  ACUERDO EQUIPO:
-  BLOQUEOS:
-  AVANCE:
+  ACUERDO EQUIPO:Tomar un ligero descanso del tema tecnico para evitar bloqueo mental del equipo
+  BLOQUEOS:fatiga por los problemas de conexion continuos
+  AVANCE:Se puso 15 min para reorganizar prioridares y retomar con mejor enfoque la cosultas de filtrado
