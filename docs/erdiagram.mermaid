@@ -1,0 +1,57 @@
+# 📊 Schema Design – E‑Commerce
+
+## Entity Relationship Diagram
+
+```mermaid
+erDiagram
+
+    USUARIO {
+        int id_usuario PK
+        string nombre
+        string email
+        string contraseña
+    }
+
+    PRODUCTO {
+        int id_producto PK
+        string nombre
+        float precio
+        int stock
+        string descripcion
+        string imagen
+        int id_categoria FK
+    }
+
+    CATEGORIA {
+        int id_categoria PK
+        string nombre
+        string descripcion
+    }
+
+    PEDIDO {
+        int id_pedido PK
+        date fecha
+        float total
+        string estado
+        int id_usuario FK
+    }
+
+    DETALLE_PEDIDO {
+        int id_detalle PK
+        int cantidad
+        float precio_unitario
+        int id_pedido FK
+        int id_producto FK
+    }
+
+    RESENA {
+        int id_resena PK
+        int calificacion
+        string comentario
+        int id_usuario FK
+        int id_producto FK
+    }
+
+    PAGO {
+        int id_pago PK
+        string metodo
