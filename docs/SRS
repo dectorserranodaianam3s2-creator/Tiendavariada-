@@ -1,0 +1,132 @@
+#  Online Store System – Complete Software Specification
+
+## 1. Introduction
+
+This document describes the complete specification of an online store system, including product backlog, software requirements (SRS), API design, and technological architecture.
+The purpose is to provide a clear and structured guide for the development of the system.
+
+The application is a web-based e-commerce platform that allows customers to browse products, make purchases, and track orders, while administrators manage products, inventory, and sales.
+
+---
+
+## 2. Product Backlog
+
+The system is divided into the following epics:
+
+* User Experience (UX/UI)
+* Product Catalog
+* Payments & Checkout
+* Shipping & Logistics
+* Marketing & Promotions
+* Security & Trust
+* Administration
+
+### Key User Stories
+
+* As a customer, I want to navigate easily so I can find products quickly.
+* As a customer, I want to see detailed product information.
+* As a customer, I want multiple payment options.
+* As a customer, I want to track my orders.
+* As an admin, I want to manage products and inventory.
+
+---
+
+## 3. Software Requirements Specification (SRS)
+
+### 3.1 Functional Requirements
+
+The system shall:
+
+* Provide intuitive navigation and responsive design
+* Allow product search and filtering
+* Display product images, descriptions, and stock
+* Support multiple payment methods
+* Provide a fast and clear checkout process
+* Calculate shipping costs and allow tracking
+* Display promotions and recommendations
+* Ensure secure user data
+* Allow product reviews
+* Enable admin product and sales management
+
+---
+
+### 3.2 Non-Functional Requirements
+
+* Performance: Response time under 3 seconds
+* Security: HTTPS and data protection
+* Usability: User-friendly and mobile compatible
+* Reliability: 99% uptime
+
+---
+
+## 4. API Design
+
+The system exposes a REST API with JSON format and JWT authentication.
+
+### Main Endpoints
+
+* **Auth**: Register and login users
+* **Users**: Get user profile
+* **Products**: CRUD operations
+* **Cart**: Manage shopping cart
+* **Orders**: Create and track orders
+* **Payments**: Process payments
+* **Shipping**: Delivery options and tracking
+* **Wishlist**: Save products
+* **Reviews**: Product feedback
+* **Admin**: Reports and management
+
+The API follows REST principles and is compatible with tools like OpenAPI Specification.
+
+---
+
+## 5. System Architecture and Technologies
+
+To ensure scalability, performance, and maintainability, the following technologies are recommended:
+
+### Backend
+
+* JavaScript with Express.js
+
+### Frontend
+
+* Next.js
+
+### Database
+
+* MongoDB for flexible data handling
+
+### Authentication & Security
+
+* JWT for authentication
+* bcrypt for password protection
+* OAuth 2.0 for scalability
+
+### Payments
+
+* Stripe or PayPal
+
+### Infrastructure
+revisar las infraestructuras
+
+* Amazon Web Services for backend hosting
+* Vercel for frontend deployment
+
+### Testing & DevOps
+
+* Jest for testing
+* Git for version control
+
+### Monitoring
+
+* Datadog or Prometheus
+
+---
+
+## 6. Conclusion
+
+This document provides a complete specification of the online store system, integrating business requirements, technical design, and architectural decisions.
+
+The system is designed to be scalable, secure, and user-friendly, following modern software engineering practices and industry standards.
+
+---
