@@ -1,0 +1,15 @@
+These are the queries that our software team has implemented for the operation and management of database searches.
+
+1. When we need to see the entire product catalog in our database, we use the query:
+     "db.productos.find()" 
+1.2 When we want to see only one product, we use the following query:
+     "db.productos.findOne()"
+1.3 When we search for a product by name, we need to apply the following query: 
+     "db.producto.findOne({ nombre: "Laptop" })"
+
+2. To search for products available in our database, we use the following query: 
+     "db.producto.find({ stock: { $gt: 0 } })"
+3. To search for a product depending on our client's budget, we need the following query: 
+     "db.productos.find({ precio: { $lt: 0 } })" 
+
+These same queries were used in the development, function, and execution of our database.
