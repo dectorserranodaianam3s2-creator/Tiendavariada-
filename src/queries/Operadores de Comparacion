@@ -1,0 +1,46 @@
+// ========================================
+// File: 02_filters.mongodb
+// Topic: Comparison Operators
+// Project: Online Store
+// ========================================
+
+use tienda
+
+// 1. Products with price greater than 50
+db.productos.find({
+  precio: { $gt: 50 }
+})
+
+// 2. Products with stock less than 10
+db.productos.find({
+  stock: { $lt: 10 }
+})
+
+// 3. Products with price > 50 AND stock < 10
+db.productos.find({
+  precio: { $gt: 50 },
+  stock: { $lt: 10 }
+})
+
+// 4. Products that belong to certain categories
+db.productos.find({
+  categoria: { $in: ["ropa", "tecnologia", "hogar"] }
+})
+
+// 5. Products that are NOT in the "belleza" category
+db.productos.find({
+  categoria: { $ne: "belleza" }
+})
+
+/*
+Operators used:
+$gt  → greater than
+$lt  → less than
+$in  → matches any value in a list
+$ne  → not equal
+
+Project usage:
+- Product filtering by price
+- Inventory control
+- Category-based search
+*/
