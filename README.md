@@ -50,80 +50,80 @@ https://wave-flow-16148775.figma.site/
 
 ---
 
-# 📂 Colecciones de la Base de Datos
+# 🗄️ Colecciones de la Base de Datos
 
-La base de datos contiene las siguientes colecciones:
+La base de datos contiene las siguientes colecciones en MongoDB:
 
-| Colección   | Descripción                  |
-| ----------- | ---------------------------- |
-| categoria   | Clasificación de productos   |
-| productos   | Información de los productos |
-| inventario  | Control de stock             |
-| ventas      | Registro de ventas           |
-| empleados   | Información de empleados     |
-| proveedores | Proveedores de productos     |
+| Colección | Descripción |
+|---|---|
+| Categoria | Clasificación de productos |
+| clientes | Información de clientes |
+| metodo de pago | Métodos de pago disponibles |
+| productos | Información de productos |
 
-   ---
+---
 
-## Modelo Entidad–Relación
+# 🔎 Ejemplos de Queries MongoDB
+
+## Obtener todos los productos
+
+```js
+db.productos.find()
+```
+
+## Buscar clientes
+
+```js
+db.clientes.find()
+```
+
+## Obtener categorías
+
+```js
+db.Categoria.find()
+```
+
+## Consultar métodos de pago
+
+```js
+db["metodo de pago"].find()
+```
+
+
+# 🔗 Modelo Entidad-Relación
 
 ```mermaid
 erDiagram
-    CATEGORIAS {
-        int categoriaID
+
+    CATEGORIA {
+        string id_categoria
         string nombre
-        string descripcion
-        date fechaCreacion
     }
 
     PRODUCTOS {
-        int productoID
+        string id_producto
         string nombre
-        string descripcion
         float precio
-        int categoriaID
+        int stock
     }
 
-    PROVEEDORES {
-        int proveedorID
+    CLIENTES {
+        string id_cliente
         string nombre
-        string telefono
-        string email
+        string correo
     }
 
-    PRODUCTO_PROVEEDOR {
-        int productoID
-        int proveedorID
+    METODO_DE_PAGO {
+        string id_pago
+        string tipo_pago
     }
 
-    INVENTARIO {
-        int inventarioID
-        int productoID
-        int cantidad
-        date ultimaActualizacion
-    }
-
-    VENTAS {
-        int ventaID
-        int productoID
-        int cantidad
-        float total
-        date fechaVenta
-    }
-
-    EMPLEADOS {
-        int empleadoID
-        string nombre
-        string puesto
-        string telefono
-    }
-
-    CATEGORIAS ||--o{ PRODUCTOS : clasifica
-    PRODUCTOS ||--o{ INVENTARIO : tiene
-    PRODUCTOS ||--o{ VENTAS : registra
-    PRODUCTOS ||--o{ PRODUCTO_PROVEEDOR : relacion
-    PROVEEDORES ||--o{ PRODUCTO_PROVEEDOR : suministra
+    CATEGORIA ||--o{ PRODUCTOS : clasifica
+    CLIENTES }o--o{ PRODUCTOS : compra
+    CLIENTES ||--|{ METODO_DE_PAGO : utiliza
+    PRODUCTOS }o--o{ METODO_DE_PAGO : se_paga_con
 ```
+
  ## Conexión a la base de datos (ns.json)
 
 Este archivo contiene la configuración de conexión a la base de datos MongoDB utilizada en el proyecto.
