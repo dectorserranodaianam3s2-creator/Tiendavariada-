@@ -124,46 +124,74 @@ erDiagram
     PRODUCTOS }o--o{ METODO_DE_PAGO : se_paga_con
 ```
 
- ## Conexión a la base de datos (ns.json)
+# 🗄️ Conexión a la Base de Datos (ns.json)
 
 Este archivo contiene la configuración de conexión a la base de datos MongoDB utilizada en el proyecto.
 
 ```json
 {
   "connectionString": "mongodb://localhost:27017",
-  "database": "hospital_pediatrico",
+  "database": "tienda_variada",
   "collections": [
-    "categoria",
-    "productos",
-    "inventario",
-    "ventas",
-    "empleados",
-    "proveedores"
+    "Categoria",
+    "clientes",
+    "metodo de pago",
+    "productos"
   ]
 }
 ```
+
 ---
 
 
-# 🔄 Relación Muchos a Muchos
+# 🔗 Relación Muchos a Muchos (N:N)
 
 Existe una relación **Muchos a Muchos (N:N)** entre:
 
-**Productos ↔ Proveedores**
+## 🛒 Productos ↔ 👥 Clientes
 
 Esto significa:
 
-* Un **producto** puede tener varios **proveedores**.
-* Un **proveedor** puede suministrar varios **productos**.
+- Un **cliente** puede comprar varios **productos**.
+- Un **producto** puede ser comprado por varios **clientes**.
 
-Para representar esta relación se utiliza la colección intermedia:
+Para representar esta relación se utiliza una colección intermedia:
 
+```text
+cliente_producto
 ```
-producto_proveedor
+
+| cliente_id | producto_id |
+|---|---|
+
+---
+
+## 💳 Clientes ↔ Método de Pago
+
+Existe también una relación **Muchos a Muchos (N:N)** entre:
+
+- Un **cliente** puede utilizar varios **métodos de pago**.
+- Un **método de pago** puede ser utilizado por varios **clientes**.
+
+Colección intermedia:
+
+```text
+cliente_metodo_pago
 ```
 
-| producto_id | proveedor_id |
-| ----------- | ------------ |
+| cliente_id | metodo_pago_id |
+|---|---|
+
+---
+
+## 📦 Categoría ↔ Productos
+
+Relación **Uno a Muchos (1:N)**:
+
+- Una **categoría** puede contener muchos **productos**.
+- Un **producto** pertenece a una sola **categoría**.
+
+
 
 ---
 
@@ -185,17 +213,16 @@ conectar();
 
 ```
 
-# 📊 Estructura de la Base de Datos
+# 🏗️ Estructura de la Base de Datos
 
-```
+```text
 tienda_variada
 │
-├── categoria
-├── productos
-├── inventario
-├── ventas
-├── empleados
-└── proveedores
+├── Categoria
+├── clientes
+├── metodo de pago
+└── productos
+```
 
 ---
 ```
