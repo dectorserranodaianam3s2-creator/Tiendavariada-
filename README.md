@@ -1,125 +1,122 @@
-# 🛒 Tienda Variada
+# 🛒 Variety Store
 
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-Backend-blue?style=for-the-badge&logo=php">
-  <img src="https://img.shields.io/badge/MongoDB-Base%20No%20Relacional-green?style=for-the-badge&logo=mongodb">
+  <img src="https://img.shields.io/badge/MongoDB-Non--Relational%20Database-green?style=for-the-badge&logo=mongodb">
   <img src="https://img.shields.io/badge/HTML5-Frontend-orange?style=for-the-badge&logo=html5">
   <img src="https://img.shields.io/badge/CSS3-Styles-blue?style=for-the-badge&logo=css3">
-  <img src="https://img.shields.io/badge/JavaScript-Interactive-yellow?style=for-the-badge&logo=javascript">
 </p>
 
 <p align="center">
-  Sistema web enfocado en la implementación y administración de bases de datos no relacionales utilizando MongoDB.
+  Web system focused on the implementation and management of non-relational databases using MongoDB.
 </p>
 
 ---
 
-# 📑 Tabla de Contenido
+# 📑 Table of Contents
 
-- [📖 Descripción](#-descripción)
-- [🎯 Objetivos](#-objetivos)
-- [✨ Características](#-características)
-- [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
-- [📂 Estructura del Proyecto](#-estructura-del-proyecto)
-- [🚀 Instalación](#-instalación)
-- [⚙️ Configuración de MongoDB](#️-configuración-de-mongodb)
-- [💻 Uso del Sistema](#-uso-del-sistema)
-- [🧪 Pruebas](#-pruebas)
-- [📸 Capturas del Proyecto](#-capturas-del-proyecto)
-- [🤝 Contribuciones](#-contribuciones)
-- [👨‍💻 Equipo de Desarrollo](#-equipo-de-desarrollo)
-- [📄 Licencia](#-licencia)
-
----
-
-# 📖 Descripción
-
-**Tienda Variada** es un sistema web desarrollado como proyecto académico para aplicar el uso de **bases de datos no relacionales** mediante MongoDB.
-
-El sistema permite almacenar y organizar información utilizando documentos y colecciones, ofreciendo una alternativa flexible frente a las bases de datos relacionales tradicionales.
-
-El proyecto busca demostrar cómo funcionan las estructuras NoSQL dentro de un entorno web dinámico e interactivo.
+- [📖 Description](#-description)
+- [🎯 Objectives](#-objectives)
+- [✨ Features](#-features)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [📂 Project Structure](#-project-structure)
+- [🚀 Installation](#-installation)
+- [⚙️ MongoDB Configuration](#️-mongodb-configuration)
+- [💻 System Usage](#-system-usage)
+- [🧪 Testing](#-testing)
+- [📸 Project Screenshots](#-project-screenshots)
+- [🤝 Contributions](#-contributions)
+- [👨‍💻 Development Team](#-development-team)
+- [📄 License](#-license)
 
 ---
 
-# 🎯 Objetivos
+# 📖 Description
 
-- Implementar una base de datos no relacional con MongoDB.
-- Gestionar información mediante documentos y colecciones.
-- Comprender el funcionamiento de las bases de datos NoSQL.
-- Aplicar tecnologías web en un proyecto práctico.
-- Desarrollar una estructura flexible y escalable.
+**Variety Store** is a web system developed as an academic project to apply the use of **non-relational databases** through MongoDB.
 
----
+The system allows storing and organizing information using documents and collections, offering a flexible alternative to traditional relational databases.
 
-# ✨ Características
-
-✅ Implementación de MongoDB como base de datos no relacional  
-✅ Uso de documentos y colecciones  
-✅ Interfaz sencilla e intuitiva  
-✅ Organización modular del sistema  
-✅ Gestión dinámica de información  
-✅ Navegación amigable  
+The project aims to demonstrate how NoSQL structures work within a dynamic and interactive web environment.
 
 ---
 
-# 🛠️ Tecnologías Utilizadas
+# 🎯 Objectives
 
-| Tecnología | Función |
+- Implement a non-relational database using MongoDB.
+- Manage information through documents and collections.
+- Understand the operation of NoSQL databases.
+- Apply web technologies in a practical project.
+- Develop a flexible and scalable structure.
+
+---
+
+# ✨ Features
+
+✅ MongoDB implementation as a non-relational database  
+✅ Use of documents and collections  
+✅ Simple and intuitive interface  
+✅ Modular system organization  
+✅ Dynamic information management  
+✅ User-friendly navigation  
+
+---
+
+# 🛠️ Technologies Used
+
+| Technology | Function |
 |---|---|
-| HTML5 | Estructura del sistema |
-| CSS3 | Diseño y estilos |
-| JavaScript | Interactividad |
-| PHP | Comunicación con el servidor |
-| MongoDB | Base de datos NoSQL |
-| MongoDB Compass | Administración visual |
-| Visual Studio Code | Desarrollo del proyecto |
+| HTML5 | System structure |
+| CSS3 | Design and styles |
+| PHP | Server-side communication |
+| MongoDB | NoSQL database |
+| MongoDB Compass | Visual database management |
+| Visual Studio Code | Project development |
 
 ---
 
-# 📂 Estructura del Proyecto
+# 📂 Project Structure
 
 ```bash
-TiendaVariada/
+VarietyStore/
 │
 ├── css/
-├── js/
 ├── php/
 ├── img/
 ├── database/
 │   ├── collections/
-│   └── documentos/
+│   └── documents/
 │
 ├── index.php
 └── README.md
 ```
 
-La estructura del proyecto permite:
+The project structure allows:
 
-- Mejor organización
-- Escalabilidad
-- Facilidad de mantenimiento
-- Comprensión de bases no relacionales
+- Better organization
+- Scalability
+- Easier maintenance
+- Understanding of non-relational databases
 
 ---
 
-# 🚀 Instalación
+# 🚀 Installation
 
-## 📌 Requisitos Previos
+## 📌 Prerequisites
 
-Antes de ejecutar el proyecto, instalar:
+Before running the project, install:
 
 - PHP 8+
 - MongoDB Community Server
 - MongoDB Compass
 - Git
-- Navegador moderno
+- Modern web browser
 
 ---
 
-## ⚙️ Pasos de Instalación
+## ⚙️ Installation Steps
 
-### 1️⃣ Clonar el repositorio
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/dectorserranodaianam3s2-creator/Tiendavariada-.git
@@ -127,7 +124,7 @@ git clone https://github.com/dectorserranodaianam3s2-creator/Tiendavariada-.git
 
 ---
 
-### 2️⃣ Acceder al proyecto
+### 2️⃣ Access the project folder
 
 ```bash
 cd Tiendavariada-
@@ -135,130 +132,130 @@ cd Tiendavariada-
 
 ---
 
-### 3️⃣ Configurar el entorno local
+### 3️⃣ Configure the local environment
 
-Colocar el proyecto dentro del servidor local utilizado.
-
----
-
-### 4️⃣ Iniciar MongoDB
-
-Ejecutar MongoDB desde servicios o terminal.
+Place the project inside your local server environment.
 
 ---
 
-### 5️⃣ Ejecutar el proyecto
+### 4️⃣ Start MongoDB
 
-Abrir el proyecto desde el navegador local.
+Run MongoDB from services or terminal.
 
 ---
 
-# ⚙️ Configuración de MongoDB
+### 5️⃣ Run the project
 
-## 📌 Crear base de datos
+Open the project from your local browser.
 
-Abrir MongoDB Compass y crear:
+---
+
+# ⚙️ MongoDB Configuration
+
+## 📌 Create database
+
+Open MongoDB Compass and create:
 
 ```bash
-TiendaVariada
+VarietyStore
 ```
 
 ---
 
-## 📌 Crear colecciones
+## 📌 Create collections
 
-Ejemplo:
+Example:
 
-- productos
-- categorías
-- usuarios
-
----
-
-## 📌 Importar documentos
-
-Importar archivos `.json` si el proyecto los incluye.
+- products
+- categories
+- users
 
 ---
 
-# 💻 Uso del Sistema
+## 📌 Import documents
 
-El sistema permite:
-
-- Consultar información.
-- Administrar documentos.
-- Visualizar datos almacenados.
-- Comprender el funcionamiento de MongoDB.
-- Explorar estructuras NoSQL.
+Import `.json` files if included in the project.
 
 ---
 
-# 🧪 Pruebas
+# 💻 System Usage
 
-Para comprobar el funcionamiento:
+The system allows:
 
-1. Ejecutar MongoDB.
-2. Verificar conexión con la base de datos.
-3. Revisar carga de documentos.
-4. Probar navegación e interacción.
+- Consulting information
+- Managing documents
+- Viewing stored data
+- Understanding MongoDB functionality
+- Exploring NoSQL structures
 
 ---
 
-# 📸 Capturas del Proyecto
+# 🧪 Testing
 
-Puedes agregar imágenes aquí:
+To verify correct functionality:
+
+1. Start MongoDB.
+2. Verify database connection.
+3. Check document loading.
+4. Test navigation and interaction.
+
+---
+
+# 📸 Project Screenshots
+
+You can add project images here:
 
 ```md
-![Inicio](img/inicio.png)
+![Home](img/home.png)
 ![MongoDB](img/mongodb.png)
 ```
 
 ---
 
-# 🤝 Contribuciones
+# 🤝 Contributions
 
-Si deseas contribuir:
+If you want to contribute:
 
-## 1️⃣ Realizar un Fork
+## 1️⃣ Fork the repository
 
-Crear una copia del repositorio.
+Create a copy of the repository.
 
 ---
 
-## 2️⃣ Crear una rama
+## 2️⃣ Create a branch
 
 ```bash
-git checkout -b feature/nueva-funcionalidad
+git checkout -b feature/new-feature
 ```
 
 ---
 
-## 3️⃣ Realizar cambios
+## 3️⃣ Make changes
 
 ```bash
 git add .
-git commit -m "Nueva funcionalidad agregada"
+git commit -m "New feature added"
 ```
 
 ---
 
-## 4️⃣ Subir cambios
+## 4️⃣ Push changes
 
 ```bash
-git push origin feature/nueva-funcionalidad
+git push origin feature/new-feature
 ```
 
 ---
 
-## 5️⃣ Abrir Pull Request
+## 5️⃣ Open a Pull Request
 
-Enviar cambios para revisión.
+Submit your changes for review.
 
 ---
 
-# 👨‍💻 Equipo de Desarrollo
+# 👨‍💻 Development Team
 
-| Rol | Integrante |
+| Role | Member |
 |---|---|
 | Scrum Master | Valentina Contreras Hernández |
 | Integration Specialist | Daiana Dector Serrano |
@@ -268,14 +265,14 @@ Enviar cambios para revisión.
 
 ---
 
-# 📄 Licencia
+# 📄 License
 
-Proyecto desarrollado con fines educativos.
+Project developed for educational purposes.
 
 ---
 
-# ⭐ Agradecimientos
+# ⭐ Acknowledgments
 
-Gracias por visitar este proyecto.
+Thank you for visiting this project.
 
-Si te gustó el repositorio puedes darle una ⭐ en GitHub.
+If you liked the repository, feel free to give it a ⭐ on GitHub.
