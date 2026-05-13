@@ -1,331 +1,281 @@
-# 🛒 Varied Store
+# 🛒 Tienda Variada
 
 <p align="center">
+  <img src="https://img.shields.io/badge/PHP-Backend-blue?style=for-the-badge&logo=php">
+  <img src="https://img.shields.io/badge/MongoDB-Base%20No%20Relacional-green?style=for-the-badge&logo=mongodb">
+  <img src="https://img.shields.io/badge/HTML5-Frontend-orange?style=for-the-badge&logo=html5">
+  <img src="https://img.shields.io/badge/CSS3-Styles-blue?style=for-the-badge&logo=css3">
+  <img src="https://img.shields.io/badge/JavaScript-Interactive-yellow?style=for-the-badge&logo=javascript">
+</p>
 
-Web system for the administration and visualization of products from a varied store using MongoDB as a non-relational database.
-
+<p align="center">
+  Sistema web enfocado en la implementación y administración de bases de datos no relacionales utilizando MongoDB.
 </p>
 
 ---
 
-# 📋 Table of Contents
+# 📑 Tabla de Contenido
 
-- [📖 General Description](#-general-description)
-
-- [✨ Characteristics](#-characteristics)
-
-- [🛠️ Technologies Used](#️-technologies-used)
-
-- [🚀 Installation](#-installation)
-
-- [💻 Use of the Project](#-use-of-the-project)
-
-- [🏗️ Project Architecture](#️-project-architecture)
-
-- [🧪 Test Execution](#-test-execution-of-tests)
-
-- [🤝 Contribution](#-contribution)
-
-- [📄 License](#-license)
-
-- [👨‍💻 Authors](#-authors)
+- [📖 Descripción](#-descripción)
+- [🎯 Objetivos](#-objetivos)
+- [✨ Características](#-características)
+- [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
+- [📂 Estructura del Proyecto](#-estructura-del-proyecto)
+- [🚀 Instalación](#-instalación)
+- [⚙️ Configuración de MongoDB](#️-configuración-de-mongodb)
+- [💻 Uso del Sistema](#-uso-del-sistema)
+- [🧪 Pruebas](#-pruebas)
+- [📸 Capturas del Proyecto](#-capturas-del-proyecto)
+- [🤝 Contribuciones](#-contribuciones)
+- [👨‍💻 Equipo de Desarrollo](#-equipo-de-desarrollo)
+- [📄 Licencia](#-licencia)
 
 ---
 
-# 📖 General Description
+# 📖 Descripción
 
-**Store Varied** is a web system developed to facilitate the administration and visualization of products within a store using a non-relational database with MongoDB.
+**Tienda Variada** es un sistema web desarrollado como proyecto académico para aplicar el uso de **bases de datos no relacionales** mediante MongoDB.
 
-The project seeks to offer a simple, organized and functional interface that allows you to manage product information efficiently through collections and documents.
+El sistema permite almacenar y organizar información utilizando documentos y colecciones, ofreciendo una alternativa flexible frente a las bases de datos relacionales tradicionales.
 
-## 🎯 Project Objectives
-
-- Organize products in a structured way.
-
-- Facilitate the consultation of information.
-
-- Improve the user experience.
-
-- Apply web technologies and non-relational databases in a practical environment.
+El proyecto busca demostrar cómo funcionan las estructuras NoSQL dentro de un entorno web dinámico e interactivo.
 
 ---
 
-# ✨ Characteristics
+# 🎯 Objetivos
 
-✔️ Product registration
-
-✔️ Organized information visualization
-
-✔️ Friendly and intuitive interface
-
-✔️ Easy navigation
-
-✔️ Basic data management using MongoDB documents
+- Implementar una base de datos no relacional con MongoDB.
+- Gestionar información mediante documentos y colecciones.
+- Comprender el funcionamiento de las bases de datos NoSQL.
+- Aplicar tecnologías web en un proyecto práctico.
+- Desarrollar una estructura flexible y escalable.
 
 ---
 
-# 🛠️ Technologies Used
+# ✨ Características
 
-This project was developed using the following technologies:
-
-- HTML5
-
-- CSS3
-
-- JavaScript
-
--PHP
-
-- MongoDB
-
-- MongoDB Compass
-
-- XAMPP
-
-- Visual Studio Code
+✅ Implementación de MongoDB como base de datos no relacional  
+✅ Uso de documentos y colecciones  
+✅ Interfaz sencilla e intuitiva  
+✅ Organización modular del sistema  
+✅ Gestión dinámica de información  
+✅ Navegación amigable  
 
 ---
 
-# 🚀 Installation
+# 🛠️ Tecnologías Utilizadas
 
-## 📌 Prerequisites
+| Tecnología | Función |
+|---|---|
+| HTML5 | Estructura del sistema |
+| CSS3 | Diseño y estilos |
+| JavaScript | Interactividad |
+| PHP | Comunicación con el servidor |
+| MongoDB | Base de datos NoSQL |
+| MongoDB Compass | Administración visual |
+| Visual Studio Code | Desarrollo del proyecto |
 
-Before running the project, make sure you have installed:
+---
 
-- XAMPP or Laragon
+# 📂 Estructura del Proyecto
 
-- PHP 8 or higher
+```bash
+TiendaVariada/
+│
+├── css/
+├── js/
+├── php/
+├── img/
+├── database/
+│   ├── collections/
+│   └── documentos/
+│
+├── index.php
+└── README.md
+```
 
+La estructura del proyecto permite:
+
+- Mejor organización
+- Escalabilidad
+- Facilidad de mantenimiento
+- Comprensión de bases no relacionales
+
+---
+
+# 🚀 Instalación
+
+## 📌 Requisitos Previos
+
+Antes de ejecutar el proyecto, instalar:
+
+- PHP 8+
 - MongoDB Community Server
-
 - MongoDB Compass
-
 - Git
-
-- Modern web browser
+- Navegador moderno
 
 ---
 
-## ⚙️ Installation Steps
+## ⚙️ Pasos de Instalación
 
-### 1️⃣ Clone the repository
-
-```bash
-
-Git clone https://github.com/dectorserranodaianam3s2-creator/Tiendavariada-.git
-
-```
-
-### 2️⃣ Enter the project folder
+### 1️⃣ Clonar el repositorio
 
 ```bash
-
-Cd Tiendavariada-
-
-```
-
-### 3️⃣ Move the project to `htdocs`
-
-Copy the project folder into:
-
-```bash
-
-C:\xampp\htdocs\
-
-```
-
-### 4️⃣ Start services
-
-Open XAMPP and start:
-
-- Apache
-
-Start MongoDB from services or terminal.
-
-### 5️⃣ Configure the non-relational database
-
-1. Open MongoDB Compass.
-
-2. Create a database called `TiendaVariada`.
-
-3. Create the necessary collections.
-
-4. Import the `.json` documents of the project if they exist.
-
-### 6️⃣ Execute the project
-
-Open in browser:
-
-```bash
-
-http://localhost/Stiendavariada-
-
+git clone https://github.com/dectorserranodaianam3s2-creator/Tiendavariada-.git
 ```
 
 ---
 
-# 💻 Use of the Project
+### 2️⃣ Acceder al proyecto
 
-The system allows:
-
-- Consult products.
-
-- Organize information.
-
-- Navigate between different sections.
-
-- Manage MongoDB documents and collections.
+```bash
+cd Tiendavariada-
+```
 
 ---
 
-## 📷 Visual Resources
+### 3️⃣ Configurar el entorno local
 
-Here you can add system images:
+Colocar el proyecto dentro del servidor local utilizado.
+
+---
+
+### 4️⃣ Iniciar MongoDB
+
+Ejecutar MongoDB desde servicios o terminal.
+
+---
+
+### 5️⃣ Ejecutar el proyecto
+
+Abrir el proyecto desde el navegador local.
+
+---
+
+# ⚙️ Configuración de MongoDB
+
+## 📌 Crear base de datos
+
+Abrir MongoDB Compass y crear:
+
+```bash
+TiendaVariada
+```
+
+---
+
+## 📌 Crear colecciones
+
+Ejemplo:
+
+- productos
+- categorías
+- usuarios
+
+---
+
+## 📌 Importar documentos
+
+Importar archivos `.json` si el proyecto los incluye.
+
+---
+
+# 💻 Uso del Sistema
+
+El sistema permite:
+
+- Consultar información.
+- Administrar documentos.
+- Visualizar datos almacenados.
+- Comprender el funcionamiento de MongoDB.
+- Explorar estructuras NoSQL.
+
+---
+
+# 🧪 Pruebas
+
+Para comprobar el funcionamiento:
+
+1. Ejecutar MongoDB.
+2. Verificar conexión con la base de datos.
+3. Revisar carga de documentos.
+4. Probar navegación e interacción.
+
+---
+
+# 📸 Capturas del Proyecto
+
+Puedes agregar imágenes aquí:
 
 ```md
-
-![ Main screen](img/home.png)
-
+![Inicio](img/inicio.png)
+![MongoDB](img/mongodb.png)
 ```
-
-You can also include:
-
-- Screenshots
-
-- GIFs
-
-- Diagrams
-
-- Mockups
 
 ---
 
-# 🏗️ Project Architecture
+# 🤝 Contribuciones
+
+Si deseas contribuir:
+
+## 1️⃣ Realizar un Fork
+
+Crear una copia del repositorio.
+
+---
+
+## 2️⃣ Crear una rama
 
 ```bash
-
-Varied Store/
-
-│
-
-├── css/
-
-├── js/
-
-├── php/
-
-├── img/
-
-├── database/
-
-│ ├── collections/
-
-│ └�─ documents/
-
-├── index.php
-
-└── README.md
-
+git checkout -b feature/nueva-funcionalidad
 ```
 
-The project is organized by modules to facilitate:
-
-- Maintenance
-
-- Scalability
-
-- Understanding the code
-
-- Management of non-relational data
-
 ---
 
-# 🧪 Test Execution
-
-To check the correct operation of the system:
-
-1. Run Apache and MongoDB.
-
-2. Verify the connection to MongoDB.
-
-3. Check that the products load correctly.
-
-4. Review forms and navigation.
-
----
-
-# 🤝 Contribution
-
-If you want to contribute to the project:
-
-## 1️⃣ Make a Fork
-
-Create a copy of the repository.
-
-## 2️⃣ Create a new branch
+## 3️⃣ Realizar cambios
 
 ```bash
-
-Git checkout -b feature/new-functionality
-
+git add .
+git commit -m "Nueva funcionalidad agregada"
 ```
 
-## 3️⃣ Make changes and save
+---
+
+## 4️⃣ Subir cambios
 
 ```bash
-
-Git add.
-
-Git commit -m "New functionality added"
-
+git push origin feature/nueva-funcionalidad
 ```
 
-## 4️⃣ Upload the changes
+---
 
-```bash
+## 5️⃣ Abrir Pull Request
 
-Git push origin feature/new-functionality
-
-```
-
-## 5️⃣ Open a Pull Request
-
-Send your changes for review.
+Enviar cambios para revisión.
 
 ---
 
-# 📄 License
+# 👨‍💻 Equipo de Desarrollo
 
-This project is under the MIT license.
-
-It can be used for educational and learning purposes.
-
----
-
-# 👨‍💻 Authors
-
-Project developed by:
-
-- Scrum Master - Valentina Contreras Hernández
-
-- The Integration Specialist - Daiana Dector Serrano
-
-- The Query Developer - Paolette Calvo Lara
-
-- Data Seeder - Vanessa Aponte Morales
-
-- Data Model - Itzel Trujillo Velázquez
+| Rol | Integrante |
+|---|---|
+| Scrum Master | Valentina Contreras Hernández |
+| Integration Specialist | Daiana Dector Serrano |
+| Query Developer | Paolette Calvo Lara |
+| Data Seeder | Vanessa Aponte Morales |
+| Data Model | Itzel Trujillo Velázquez |
 
 ---
 
-#🔗 GitHub
+# 📄 Licencia
 
-Https://github.com/dectorserranodaianam3s2-creator
+Proyecto desarrollado con fines educativos.
 
 ---
 
-# ⭐ Thanks
+# ⭐ Agradecimientos
 
-Thank you for visiting this project.
+Gracias por visitar este proyecto.
 
-If you find it useful, you can give it a ⭐ on GitHub.
+Si te gustó el repositorio puedes darle una ⭐ en GitHub.
