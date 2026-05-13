@@ -1,239 +1,331 @@
-# 🛒 Tienda Variada
+# 🛒 Varied Store
 
 <p align="center">
-  Sistema web para la administración y visualización de productos de una tienda variada.
+
+Web system for the administration and visualization of products from a varied store using MongoDB as a non-relational database.
+
 </p>
 
 ---
 
-# 📋 Tabla de Contenidos
+# 📋 Table of Contents
 
-- [📖 Descripción General](#-descripción-general)
-- [✨ Características](#-características)
-- [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
-- [🚀 Instalación](#-instalación)
-- [💻 Uso del Proyecto](#-uso-del-proyecto)
-- [🏗️ Arquitectura del Proyecto](#️-arquitectura-del-proyecto)
-- [🧪 Ejecución de Pruebas](#-ejecución-de-pruebas)
-- [🤝 Contribución](#-contribución)
-- [📄 Licencia](#-licencia)
-- [👨‍💻 Autores](#-autores)
+- [📖 General Description](#-general-description)
 
----
+- [✨ Characteristics](#-characteristics)
 
-# 📖 Descripción General
+- [🛠️ Technologies Used](#️-technologies-used)
 
-**Tienda Variada** es un sistema web desarrollado para facilitar la administración y visualización de productos dentro de una tienda.
+- [🚀 Installation](#-installation)
 
-El proyecto busca ofrecer una interfaz sencilla, organizada y funcional que permita gestionar información de productos de manera eficiente.
+- [💻 Use of the Project](#-use-of-the-project)
 
-## 🎯 Objetivos del Proyecto
+- [🏗️ Project Architecture](#️-project-architecture)
 
-- Organizar productos de forma estructurada.
-- Facilitar la consulta de información.
-- Mejorar la experiencia del usuario.
-- Aplicar tecnologías web en un entorno práctico.
+- [🧪 Test Execution](#-test-execution-of-tests)
+
+- [🤝 Contribution](#-contribution)
+
+- [📄 License](#-license)
+
+- [👨‍💻 Authors](#-authors)
 
 ---
 
-# ✨ Características
+# 📖 General Description
 
-✔️ Registro de productos  
-✔️ Visualización organizada de información  
-✔️ Interfaz amigable e intuitiva  
-✔️ Navegación sencilla  
-✔️ Gestión básica de datos  
+**Store Varied** is a web system developed to facilitate the administration and visualization of products within a store using a non-relational database with MongoDB.
+
+The project seeks to offer a simple, organized and functional interface that allows you to manage product information efficiently through collections and documents.
+
+## 🎯 Project Objectives
+
+- Organize products in a structured way.
+
+- Facilitate the consultation of information.
+
+- Improve the user experience.
+
+- Apply web technologies and non-relational databases in a practical environment.
 
 ---
 
-# 🛠️ Tecnologías Utilizadas
+# ✨ Characteristics
 
-Este proyecto fue desarrollado utilizando las siguientes tecnologías:
+✔️ Product registration
+
+✔️ Organized information visualization
+
+✔️ Friendly and intuitive interface
+
+✔️ Easy navigation
+
+✔️ Basic data management using MongoDB documents
+
+---
+
+# 🛠️ Technologies Used
+
+This project was developed using the following technologies:
 
 - HTML5
+
 - CSS3
+
 - JavaScript
-- PHP
-- MySQL
+
+-PHP
+
+- MongoDB
+
+- MongoDB Compass
+
 - XAMPP
+
 - Visual Studio Code
 
 ---
 
-# 🚀 Instalación
+# 🚀 Installation
 
-## 📌 Prerrequisitos
+## 📌 Prerequisites
 
-Antes de ejecutar el proyecto, asegúrate de tener instalado:
+Before running the project, make sure you have installed:
 
-- XAMPP o Laragon
-- PHP 8 o superior
-- MySQL
+- XAMPP or Laragon
+
+- PHP 8 or higher
+
+- MongoDB Community Server
+
+- MongoDB Compass
+
 - Git
-- Navegador web moderno
+
+- Modern web browser
 
 ---
 
-## ⚙️ Pasos de Instalación
+## ⚙️ Installation Steps
 
-### 1️⃣ Clonar el repositorio
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/dectorserranodaianam3s2-creator/Tiendavariada-.git
+
+Git clone https://github.com/dectorserranodaianam3s2-creator/Tiendavariada-.git
+
 ```
 
-### 2️⃣ Entrar a la carpeta del proyecto
+### 2️⃣ Enter the project folder
 
 ```bash
-cd Tiendavariada-
+
+Cd Tiendavariada-
+
 ```
 
-### 3️⃣ Mover el proyecto a `htdocs`
+### 3️⃣ Move the project to `htdocs`
 
-Copiar la carpeta del proyecto dentro de:
+Copy the project folder into:
 
 ```bash
+
 C:\xampp\htdocs\
+
 ```
 
-### 4️⃣ Iniciar servicios
+### 4️⃣ Start services
 
-Abrir XAMPP e iniciar:
+Open XAMPP and start:
 
 - Apache
-- MySQL
 
-### 5️⃣ Configurar la base de datos
+Start MongoDB from services or terminal.
 
-1. Abrir phpMyAdmin.
-2. Crear una base de datos.
-3. Importar el archivo `.sql` del proyecto.
+### 5️⃣ Configure the non-relational database
 
-### 6️⃣ Ejecutar el proyecto
+1. Open MongoDB Compass.
 
-Abrir en el navegador:
+2. Create a database called `TiendaVariada`.
+
+3. Create the necessary collections.
+
+4. Import the `.json` documents of the project if they exist.
+
+### 6️⃣ Execute the project
+
+Open in browser:
 
 ```bash
-http://localhost/Tiendavariada-
+
+http://localhost/Stiendavariada-
+
 ```
 
 ---
 
-# 💻 Uso del Proyecto
+# 💻 Use of the Project
 
-El sistema permite:
+The system allows:
 
-- Consultar productos.
-- Organizar información.
-- Navegar entre diferentes secciones.
-- Gestionar datos de manera básica.
+- Consult products.
+
+- Organize information.
+
+- Navigate between different sections.
+
+- Manage MongoDB documents and collections.
 
 ---
 
-## 📷 Recursos Visuales
+## 📷 Visual Resources
 
-Aquí puedes agregar imágenes del sistema:
+Here you can add system images:
 
 ```md
-![Pantalla principal](img/inicio.png)
+
+![ Main screen](img/home.png)
+
 ```
 
-También puedes incluir:
+You can also include:
 
-- Capturas de pantalla
+- Screenshots
+
 - GIFs
-- Diagramas
+
+- Diagrams
+
 - Mockups
 
 ---
 
-# 🏗️ Arquitectura del Proyecto
+# 🏗️ Project Architecture
 
 ```bash
-TiendaVariada/
+
+Varied Store/
+
 │
+
 ├── css/
+
 ├── js/
+
 ├── php/
+
 ├── img/
+
 ├── database/
+
+│ ├── collections/
+
+│ └�─ documents/
+
 ├── index.php
+
 └── README.md
+
 ```
 
-El proyecto se encuentra organizado por módulos para facilitar:
+The project is organized by modules to facilitate:
 
-- Mantenimiento
-- Escalabilidad
-- Comprensión del código
+- Maintenance
 
----
+- Scalability
 
-# 🧪 Ejecución de Pruebas
+- Understanding the code
 
-Para comprobar el correcto funcionamiento del sistema:
-
-1. Ejecutar Apache y MySQL.
-2. Verificar la conexión a la base de datos.
-3. Comprobar que los productos carguen correctamente.
-4. Revisar formularios y navegación.
+- Management of non-relational data
 
 ---
 
-# 🤝 Contribución
+# 🧪 Test Execution
 
-Si deseas contribuir al proyecto:
+To check the correct operation of the system:
 
-## 1️⃣ Haz un Fork
+1. Run Apache and MongoDB.
 
-Crea una copia del repositorio.
+2. Verify the connection to MongoDB.
 
-## 2️⃣ Crea una nueva rama
+3. Check that the products load correctly.
+
+4. Review forms and navigation.
+
+---
+
+# 🤝 Contribution
+
+If you want to contribute to the project:
+
+## 1️⃣ Make a Fork
+
+Create a copy of the repository.
+
+## 2️⃣ Create a new branch
 
 ```bash
-git checkout -b feature/nueva-funcionalidad
+
+Git checkout -b feature/new-functionality
+
 ```
 
-## 3️⃣ Realiza cambios y guarda
+## 3️⃣ Make changes and save
 
 ```bash
-git add .
-git commit -m "Nueva funcionalidad agregada"
+
+Git add.
+
+Git commit -m "New functionality added"
+
 ```
 
-## 4️⃣ Sube los cambios
+## 4️⃣ Upload the changes
 
 ```bash
-git push origin feature/nueva-funcionalidad
+
+Git push origin feature/new-functionality
+
 ```
 
-## 5️⃣ Abre un Pull Request
+## 5️⃣ Open a Pull Request
 
-Envía tus cambios para revisión.
-
----
-
-# 📄 Licencia
-
-Este proyecto está bajo la licencia MIT.
-
-Puede utilizarse con fines educativos y de aprendizaje.
+Send your changes for review.
 
 ---
 
-# 👨‍💻 Autores
+# 📄 License
 
-Proyecto desarrollado por:
+This project is under the MIT license.
 
-- Scrum Master- Valentina Contreras Hernández                                                            - The Integration Specialist - Daiana Dector Serrano                                                                            - The Query Developer - Paolette Calvo Lara         - Data Seder - Vanessa Aponte Morales 
-     - Data Model - Itzel Trujillo Velasquez 
-## 🔗 GitHub
-
-https://github.com/dectorserranodaianam3s2-creator
+It can be used for educational and learning purposes.
 
 ---
 
-# ⭐ Agradecimientos
+# 👨‍💻 Authors
 
-Gracias por visitar este proyecto.  
-Si te resulta útil, puedes darle una ⭐ en GitHub.
+Project developed by:
+
+- Scrum Master - Valentina Contreras Hernández
+
+- The Integration Specialist - Daiana Dector Serrano
+
+- The Query Developer - Paolette Calvo Lara
+
+- Data Seeder - Vanessa Aponte Morales
+
+- Data Model - Itzel Trujillo Velázquez
+
+---
+
+#🔗 GitHub
+
+Https://github.com/dectorserranodaianam3s2-creator
+
+---
+
+# ⭐ Thanks
+
+Thank you for visiting this project.
+
+If you find it useful, you can give it a ⭐ on GitHub.
