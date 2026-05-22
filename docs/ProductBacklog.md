@@ -1,166 +1,178 @@
-# 🛒 Tienda Variada
+# 🛒 Variety Store
 
-## 📌 Descripción del Proyecto
-Proyecto de una tienda variada en línea donde los usuarios pueden visualizar productos, agregarlos al carrito y realizar compras de manera rápida y segura.
+# 📖 Introduction
+Variety Store is an e-commerce platform developed to facilitate the purchase and sale of products from different categories such as fashion, electronics, and home products. The system will allow users to register, browse products, add items to the cart, make payments, and manage orders quickly, securely, and efficiently.
+
+---
+
+# 👥 Team Members and Roles
+
+| Name | Role |
+|---|---|
+| Daiana | Scrum Master |
+| Paolette | Product Owner |
+| Valentina | Frontend Developer |
+| Itzel | Backend Developer |
+| Vannesa | Database Developer |
 
 ---
 
 # 🎯 Product Backlog
 
-## ÉPICA 1: Gestión de Usuarios
+## EPIC 1: User Management
 
-| ID | Historia de Usuario | Prioridad | Sprint |
-|----|----------------------|------------|---------|
-| US01 | Como usuario, quiero registrarme con correo y contraseña para crear una cuenta. | Alta | Sprint 1 |
-| US02 | Como usuario, quiero iniciar sesión para acceder a mis compras y datos. | Alta | Sprint 1 |
-| US03 | Como usuario, quiero recuperar mi contraseña para volver a entrar a mi cuenta. | Media | Sprint 2 |
-| US04 | Como usuario, quiero editar mi perfil para actualizar mi información personal. | Baja | Sprint 3 |
+| ID | User Story | Priority | Sprint |
+|----|-------------|------------|---------|
+| US01 | As a user, I want to register with email and password to create an account. | High | Sprint 1 |
+| US02 | As a user, I want to log in to access my purchases and information. | High | Sprint 1 |
+| US03 | As a user, I want to recover my password to regain access to my account. | Medium | Sprint 2 |
+| US04 | As a user, I want to edit my profile to update my personal information. | Low | Sprint 3 |
 
-### ✅ Criterios de aceptación
-- Registro exitoso
-- Validación de datos
-- Inicio de sesión funcional
-- Datos guardados correctamente
-
----
-
-## ÉPICA 2: Catálogo de Productos
-
-### 📂 Categorías
-- Moda
-- Electrónica
-- Hogar
-
-| ID | Historia de Usuario | Prioridad | Sprint |
-|----|----------------------|------------|---------|
-| US05 | Como usuario, quiero ver productos organizados por categorías. | Alta | Sprint 1 |
-| US06 | Como usuario, quiero visualizar imágenes, precios y descripciones. | Alta | Sprint 1 |
-| US07 | Como usuario, quiero buscar productos por nombre. | Alta | Sprint 2 |
-| US08 | Como usuario, quiero filtrar productos por categoría o precio. | Media | Sprint 2 |
-
-### ✅ Criterios de aceptación
-- Productos visibles correctamente
-- Imágenes y precios mostrados
-- Filtros funcionales
-- Catálogo organizado
+### ✅ Acceptance Criteria
+- Successful registration
+- Data validation
+- Functional login
+- Data stored correctly
 
 ---
 
-## ÉPICA 3: Carrito de Compras
+## EPIC 2: Product Catalog
 
-| ID | Historia de Usuario | Prioridad | Sprint |
-|----|----------------------|------------|---------|
-| US09 | Como usuario, quiero agregar productos al carrito. | Alta | Sprint 1 |
-| US10 | Como usuario, quiero eliminar productos del carrito. | Alta | Sprint 2 |
-| US11 | Como usuario, quiero visualizar el total de compra. | Alta | Sprint 2 |
+### 📂 Categories
+- Fashion
+- Electronics
+- Home
 
-### ✅ Criterios de aceptación
-- Productos agregados correctamente
-- Actualización automática del carrito
-- Cálculo total funcional
+| ID | User Story | Priority | Sprint |
+|----|-------------|------------|---------|
+| US05 | As a user, I want to view products organized by categories. | High | Sprint 1 |
+| US06 | As a user, I want to view product images, prices, and descriptions. | High | Sprint 1 |
+| US07 | As a user, I want to search products by name. | High | Sprint 2 |
+| US08 | As a user, I want to filter products by category or price. | Medium | Sprint 2 |
 
----
-
-## ÉPICA 4: Pagos y Pedidos
-
-### 💳 Métodos de Pago
-- Tarjeta
-- Efectivo
-
-| ID | Historia de Usuario | Prioridad | Sprint |
-|----|----------------------|------------|---------|
-| US12 | Como usuario, quiero realizar pagos en línea. | Alta | Sprint 3 |
-| US13 | Como usuario, quiero recibir comprobante de compra. | Media | Sprint 3 |
-| US14 | Como usuario, quiero revisar historial de pedidos. | Media | Sprint 4 |
-
-### ✅ Criterios de aceptación
-- Selección de método de pago
-- Confirmación de compra
-- Generación de comprobante
+### ✅ Acceptance Criteria
+- Products displayed correctly
+- Images and prices shown
+- Functional filters
+- Organized catalog
 
 ---
 
-## ÉPICA 5: Administración de Inventario
+## EPIC 3: Shopping Cart
 
-| ID | Historia de Usuario | Prioridad | Sprint |
-|----|----------------------|------------|---------|
-| US15 | Como administrador, quiero agregar nuevos productos. | Alta | Sprint 2 |
-| US16 | Como administrador, quiero editar precios y descripciones. | Alta | Sprint 2 |
-| US17 | Como administrador, quiero eliminar productos agotados. | Media | Sprint 3 |
-| US18 | Como administrador, quiero visualizar el inventario. | Alta | Sprint 3 |
+| ID | User Story | Priority | Sprint |
+|----|-------------|------------|---------|
+| US09 | As a user, I want to add products to the shopping cart. | High | Sprint 1 |
+| US10 | As a user, I want to remove products from the shopping cart. | High | Sprint 2 |
+| US11 | As a user, I want to view the total purchase amount. | High | Sprint 2 |
 
-### ✅ Criterios de aceptación
-- Productos agregados correctamente
-- Cambios reflejados en catálogo
-- Inventario actualizado
-
----
-
-## ÉPICA 6: Panel de Administración
-
-| ID | Historia de Usuario | Prioridad | Sprint |
-|----|----------------------|------------|---------|
-| US19 | Como administrador, quiero visualizar ventas realizadas. | Alta | Sprint 4 |
-| US20 | Como administrador, quiero administrar pedidos. | Alta | Sprint 4 |
-| US21 | Como administrador, quiero visualizar productos más vendidos. | Media | Sprint 4 |
-
-### ✅ Criterios de aceptación
-- Visualización de pedidos
-- Estadísticas funcionales
-- Panel operativo
+### ✅ Acceptance Criteria
+- Products added correctly
+- Automatic cart updates
+- Functional total calculation
 
 ---
 
-## ÉPICA 7: Opiniones y Ofertas
+## EPIC 4: Payments and Orders
 
-| ID | Historia de Usuario | Prioridad | Sprint |
-|----|----------------------|------------|---------|
-| US22 | Como usuario, quiero dejar reseñas de productos. | Baja | Sprint 4 |
-| US23 | Como usuario, quiero recibir promociones y descuentos. | Baja | Sprint 4 |
+### 💳 Payment Methods
+- Card
+- Cash
 
-### ✅ Criterios de aceptación
-- Reseñas guardadas correctamente
-- Comentarios visibles
-- Promociones activas
+| ID | User Story | Priority | Sprint |
+|----|-------------|------------|---------|
+| US12 | As a user, I want to make online payments. | High | Sprint 3 |
+| US13 | As a user, I want to receive a purchase receipt. | Medium | Sprint 3 |
+| US14 | As a user, I want to review my order history. | Medium | Sprint 4 |
 
----
-
-# 🗂️ Colecciones de Base de Datos
-- Clientes
-- Productos
-- Pedidos
-- Método de Pago
-- Reseñas
-- Inventario
-- Administradores
-- Categorías
-- Carrito
+### ✅ Acceptance Criteria
+- Payment method selection
+- Purchase confirmation
+- Receipt generation
 
 ---
 
-# 🚚 Sistema de Envíos
-- Dirección del cliente
-- Estado del pedido
-- Tiempo estimado de entrega
+## EPIC 5: Inventory Management
+
+| ID | User Story | Priority | Sprint |
+|----|-------------|------------|---------|
+| US15 | As an administrator, I want to add new products. | High | Sprint 2 |
+| US16 | As an administrator, I want to edit prices and descriptions. | High | Sprint 2 |
+| US17 | As an administrator, I want to remove out-of-stock products. | Medium | Sprint 3 |
+| US18 | As an administrator, I want to view inventory. | High | Sprint 3 |
+
+### ✅ Acceptance Criteria
+- Products added successfully
+- Changes reflected in the catalog
+- Updated inventory
 
 ---
 
-# 🔐 Seguridad
-- Inicio de sesión seguro
-- Validación de usuarios
-- Protección de datos
+## EPIC 6: Administration Panel
+
+| ID | User Story | Priority | Sprint |
+|----|-------------|------------|---------|
+| US19 | As an administrator, I want to view sales reports. | High | Sprint 4 |
+| US20 | As an administrator, I want to manage orders. | High | Sprint 4 |
+| US21 | As an administrator, I want to view best-selling products. | Medium | Sprint 4 |
+
+### ✅ Acceptance Criteria
+- Order visualization
+- Functional statistics
+- Operational dashboard
 
 ---
 
-# ❤️ Funciones Extra
-- Lista de favoritos
-- Productos recomendados
-- Historial de compras
-- Ofertas y descuentos
+## EPIC 7: Reviews and Offers
+
+| ID | User Story | Priority | Sprint |
+|----|-------------|------------|---------|
+| US22 | As a user, I want to leave product reviews. | Low | Sprint 4 |
+| US23 | As a user, I want to receive promotions and discounts. | Low | Sprint 4 |
+
+### ✅ Acceptance Criteria
+- Reviews saved correctly
+- Visible comments
+- Active promotions
 
 ---
 
-# 🖥️ Tecnologías Utilizadas
+# 🗂️ Database Collections
+- Customers
+- Products
+- Orders
+- Payment Methods
+- Reviews
+- Inventory
+- Administrators
+- Categories
+- Cart
+
+---
+
+# 🚚 Shipping System
+- Customer address
+- Order status
+- Estimated delivery time
+
+---
+
+# 🔐 Security
+- Secure login
+- User validation
+- Data protection
+
+---
+
+# ❤️ Extra Features
+- Favorites list
+- Recommended products
+- Purchase history
+- Offers and discounts
+
+---
+
+# 🖥️ Technologies Used
 
 ## Frontend
 - HTML
@@ -172,44 +184,35 @@ Proyecto de una tienda variada en línea donde los usuarios pueden visualizar pr
 - Node.js
 - PHP
 
-## Base de Datos
+## Database
 - MongoDB
 - MySQL
 
 ---
 
-# 👥 Integrantes
-- Daiana
-- Paolette
-- Valentina
-- Itzel
-- Vannesa
-
----
-
-# 📅 Organización de Sprints
+# 📅 Sprint Organization
 
 ## Sprint 1
-- Registro e inicio de sesión
-- Catálogo de productos
-- Carrito básico
+- Registration and login
+- Product catalog
+- Basic shopping cart
 
 ## Sprint 2
-- Búsqueda y filtros
-- Administración de productos
-- Modificación del carrito
+- Search and filters
+- Product management
+- Cart modification
 
 ## Sprint 3
-- Sistema de pagos
-- Inventario
-- Seguridad
+- Payment system
+- Inventory
+- Security
 
 ## Sprint 4
-- Panel administrador
-- Reseñas
-- Promociones y mejoras visuales
+- Admin panel
+- Reviews
+- Promotions and visual improvements
 
 ---
 
-# 📖 Metodología
-Proyecto desarrollado utilizando Scrum y Product Backlog.
+# 📖 Methodology
+Project developed using Scrum and Product Backlog methodology.
