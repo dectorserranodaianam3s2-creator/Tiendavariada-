@@ -1,0 +1,47 @@
+// S15: Tuberías Avanzadas - Reporte de usuarios + total gastado
+// Autor: Valentina Contreras Hernandez
+// Fecha: Mayo 2026
+
+use('Tiendavariada'); // Cambia por el nombre de tu BD
+
+db.usuarios.aggregate([
+  // 1. $lookup = JOIN con la colección pedidos
+  {
+    $lookup: {
+      from: "pedidos",           // colección a unir
+      localField: "_id",         // campo de usuarios
+      foreignField: "usuario_id", // campo de pedidos
+      as: "pedidos_usuario"      // aquí se guarda el array de pedidos
+    }
+  },
+
+  // 2. $project = dar formato y calcular campos nuevos
+  {
+    $project: {
+      _id: 0,
+      nombre: 1,
+      email: 1,
+      total_pedidos: { $size: "$pedidos_usuario" },
+      total_gastado: { $sum: "$pedidos_usuario.total" },
+      ticket_promedio: { $avg: "$pedidos_usuario.total" },
+      ultimo_pedido: { $max: "$pedidos_usuario.fecha" }
+    }
+  },
+
+  // 3. $match = filtrar solo usuarios que sí compraron
+  {
+    $match: {
+      total_pedidos: { $gt: 0 }
+    }
+  },
+
+  // 4. $sort = ordenar de mayor a menor gasto
+  {
+    $sort: { total_gastado: -1 }
+  },
+
+  // 5. $limit = traer solo el top 10 clientes
+  {
+    $limit: 10
+  }
+]);
