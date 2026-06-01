@@ -17,7 +17,7 @@ Implement the product catalog module, allowing administrators to register, updat
 | Parameter | Value |
 |------------|---------|
 | Sprint Duration | 1 Week |
-| Team Members | 4 |
+| Team Members | 5 |
 | Daily Commitment | 4 Hours/Member/Day |
 | Total Sprint Capacity | 80 Hours |
 | Estimated Workload | 72 Hours |
@@ -51,11 +51,11 @@ Implement the product catalog module, allowing administrators to register, updat
 
 | Task | Responsible |
 |---------|-------------|
-| Design catalog interface | Developer 1 |
-| Create product list component | Developer 1 |
-| Connect database query | Developer 2 |
-| Display products dynamically | Developer 1 |
-| Functional testing | Product Owner |
+| Design catalog interface | Paolette Calvo |
+| Create product list component | Paolette Calvo |
+| Connect database query | Daiana Dector|
+| Display products dynamically | Paolette Calvo |
+| Functional testing |Valentina Contreras|
 
 #### Acceptance Criteria
 
@@ -83,11 +83,11 @@ Then the system displays a message indicating that no products are available
 
 | Task | Responsible |
 |---------|-------------|
-| Create product registration form | Developer 1 |
-| Develop Create Product API | Developer 2 |
-| Validate required fields | Developer 2 |
-| Store product data in database | Developer 2 |
-| Functional testing | Product Owner |
+| Create product registration form | Paolette Calvo|
+| Develop Create Product API | Daiana Dector |
+| Validate required fields | Daiana Dector|
+| Store product data in database | Daiana Dector |
+| Functional testing | Valentina Contreras|
 
 #### Acceptance Criteria
 
@@ -118,10 +118,10 @@ Then the system displays validation errors
 
 | Task | Responsible |
 |---------|-------------|
-| Create update form | Developer 1 |
-| Develop Update API | Developer 2 |
-| Validate modifications | Developer 2 |
-| Functional testing | Product Owner |
+| Create update form | Paolette Calvo|
+| Develop Update API | Daiana Dector|
+| Validate modifications | Daiana Dector |
+| Functional testing | Valentina Contreras|
 
 #### Acceptance Criteria
 
@@ -145,10 +145,10 @@ Then the system updates the product successfully
 
 | Task | Responsible |
 |---------|-------------|
-| Create delete functionality | Developer 2 |
-| Add confirmation dialog | Developer 1 |
-| Remove product from database | Developer 2 |
-| Functional testing | Product Owner |
+| Create delete functionality | Daiana Dector |
+| Add confirmation dialog | Paolette calvo|
+| Remove product from database | Daiana Dector |
+| Functional testing | Valentina Contreras|
 
 #### Acceptance Criteria
 
@@ -166,13 +166,13 @@ Then the product is removed from the catalog
 
 ## 4. Weekly Execution Roadmap
 
-| Day | Activities |
+| Hours | Activities |
 |------|------------|
-| Monday | Sprint Planning, repository setup, database configuration |
-| Tuesday | Catalog interface development |
-| Wednesday | Product registration module |
-| Thursday | Update and delete product functionalities |
-| Friday | Functional testing, bug fixes, Sprint Review and Retrospective |
+| 1 hour | Sprint Planning, repository setup, database configuration |
+| 2 hours | Catalog interface development |
+| 2 hours | Product registration module |
+| 2 hours | Update and delete product functionalities |
+| 1 hour| Functional testing, bug fixes, Sprint Review and Retrospective |
 
 ---
 
@@ -180,13 +180,13 @@ Then the product is removed from the catalog
 
 | Day | Activity | Responsible | Expected Result |
 |------|------------|-------------|----------------|
-| Monday | Sprint Planning and task assignment | Scrum Team | Approved Sprint Backlog |
-| Monday | Configure database and repository | Developers | Development environment ready |
-| Tuesday | Develop catalog module | Developer 1 | Product catalog functional |
-| Wednesday | Develop registration functionality | Developer 2 | Products can be added |
-| Thursday | Implement update and delete operations | Developers | Full CRUD functionality completed |
-| Friday | Execute Gherkin scenarios | Product Owner | Acceptance criteria validated |
-| Friday | Correct defects and optimize system | Scrum Team | Stable sprint increment |
+| 1 hour| Sprint Planning and task assignment | Scrum Team | Approved Sprint Backlog |
+| 1 hour | Configure database and repository | Developers | Development environment ready |
+| 2 hours | Develop catalog module | Developer 1 | Product catalog functional |
+| 2 hours | Develop registration functionality | Developer 2 | Products can be added |
+| 2 hours | Implement update and delete operations | Developers | Full CRUD functionality completed |
+| 1 hour | Execute Gherkin scenarios | Product Owner | Acceptance criteria validated |
+| 1 hour| Correct defects and optimize system | Scrum Team | Stable sprint increment |
 
 ---
 
