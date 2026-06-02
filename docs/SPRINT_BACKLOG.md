@@ -213,10 +213,10 @@ All Gherkin scenarios must pass successfully before sprint closure.
 
 ## 7. Definition of Done
 
-- Code uploaded to repository.
-- CRUD functionalities completed.
-- Acceptance criteria satisfied.
-- Gherkin scenarios executed successfully.
-- No critical defects.
-- Frontend integrated with backend.
-- Product Owner approval obtained.
+- [ ]Code uploaded to repository.
+- [ ]CRUD functionalities completed.
+- [ ]Acceptance criteria satisfied.
+- [ ]Gherkin scenarios executed successfully.
+- [ ]No critical defects.
+- [ ]Frontend integrated with backend.
+- [ ]Product Owner approval obtained.
