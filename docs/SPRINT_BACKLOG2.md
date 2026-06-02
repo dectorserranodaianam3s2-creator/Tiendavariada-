@@ -223,13 +223,17 @@ All 14 Gherkin scenarios must pass successfully before sprint closure.
 
 ## 7. Definition of Done
 
-- Product search module operational.
-- Inventory management module operational.
-- Low stock alerts operational.
-- Product details view operational.
-- All acceptance criteria satisfied.
-- All 14 Gherkin scenarios executed successfully.
-- Integration tests completed successfully.
-- Documentation updated.
-- Code uploaded and merged into the repository.
-- Sprint Review approved by the team.
+### Sprint Completion Checklist
+
+- [ ] Product search module operational
+- [ ] Inventory management module operational
+- [ ] Low stock alerts operational
+- [ ] Product details view operational
+- [ ] All acceptance criteria satisfied
+- [ ] All 14 Gherkin scenarios executed successfully
+- [ ] Integration tests completed successfully
+- [ ] Documentation updated
+- [ ] Code uploaded and merged into repository
+- [ ] Sprint Review completed
+- [ ] Sprint Retrospective completed
+- [ ] Product Owner approval obtained
