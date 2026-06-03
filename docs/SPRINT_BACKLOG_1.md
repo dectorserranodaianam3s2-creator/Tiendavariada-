@@ -16,7 +16,7 @@ Establish the foundational system architecture and implement core product admini
 
 | Parameter | Value |
 |------------|---------|
-| Sprint Duration | 5 Weeks |
+| Sprint Duration | 4 Weeks |
 | Team Members | 5 |
 | Total Sprint Capacity | 160 Hours |
 | Estimated Workload | 32 Hours |
