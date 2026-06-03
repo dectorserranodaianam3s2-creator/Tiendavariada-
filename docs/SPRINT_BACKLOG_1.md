@@ -1,229 +1,273 @@
-# Sprint Backlog – Sprint 1: Product Catalog Management
+# Sprint Backlog – Sprint 1: Core Foundations & Product Administration
 
 ## Product Goal Reference
 
-Develop a digital platform for Tienda Variada that allows administrators to manage products efficiently and customers to browse available products easily.
+Develop a secure, centralized, and user-friendly inventory and sales management system for a retail store, streamlining product administration, inventory tracking, and customer transactions.
 
 ---
 
-## 1. Sprint Goal
+# 1. Sprint Goal
 
-Implement the product catalog module, allowing administrators to register, update, and delete products while enabling customers to view available items.
+Establish the foundational system architecture and implement core product administration functionalities, including product registration, update, deletion, and visualization.
 
 ---
 
-## 2. Sprint Parameters & Capacity Plan
+# 2. Sprint Parameters & Capacity Plan
 
 | Parameter | Value |
 |------------|---------|
-| Sprint Duration | 1 Week |
+| Sprint Duration | 5 Weeks |
 | Team Members | 5 |
-| Daily Commitment | 4 Hours/Member/Day |
-| Total Sprint Capacity | 80 Hours |
-| Estimated Workload | 72 Hours |
-| Buffer | 8 Hours |
+| Total Sprint Capacity | 160 Hours |
+| Estimated Workload | 32 Hours |
+| Buffer | 128 Hours |
 
 ---
 
-## 3. Selected Epics & User Stories
+# 3. Selected User Stories
 
-### Epic 1.1: Product Management
+## User Story US-01 – Register Product
 
-## Story Point Estimation
+### Story
 
-| User Story ID | User Story | Gherkin Scenarios | Story Points |
-|---------------|------------|------------------|-------------|
-| US-01 | View Product Catalog | 2 | 3 |
-| US-02 | Register Product | 2 | 5 |
-| US-03 | Update Product | 1 | 3 |
-| US-04 | Delete Product | 1 | 3 |
-| **Total** |  | **6 Scenarios** | **14 SP** |
+As a Store Administrator, I want to register products in the system so that they can be available for inventory management and sales operations.
 
----
-
-### User Story US-01 – View Product Catalog
-
-**As a customer, I want to view available products so that I can browse items before purchasing.**
-
-**Story Points:** 3
-
-#### Tasks
-
-| Task | Responsible |
-|---------|-------------|
-| Design catalog interface | Paolette Calvo |
-| Create product list component | Paolette Calvo |
-| Connect database query | Daiana Dector|
-| Display products dynamically | Paolette Calvo |
-| Functional testing |Valentina Contreras|
-
-#### Acceptance Criteria
-
-```gherkin
-Feature: Product Catalog
-
-Scenario: View available products
-Given products exist in the database
-When the customer enters the catalog page
-Then the system displays all available products
-
-Scenario: Empty catalog
-Given there are no products registered
-When the customer enters the catalog page
-Then the system displays a message indicating that no products are available
-```
-
-### User Story US-02 – Register Product
-
-**As an administrator, I want to add products to the catalog so that customers can purchase them.**
-
-**Story Points:** 5
-
-#### Tasks
-
-| Task | Responsible |
-|---------|-------------|
-| Create product registration form | Paolette Calvo|
-| Develop Create Product API | Daiana Dector |
-| Validate required fields | Daiana Dector|
-| Store product data in database | Daiana Dector |
-| Functional testing | Valentina Contreras|
-
-#### Acceptance Criteria
+### Acceptance Criteria
 
 ```gherkin
 Feature: Product Registration
 
 Scenario: Successful product registration
-Given the administrator is on the product registration page
-When valid product information is entered
-And the save button is pressed
-Then the product is stored in the database
-And appears in the catalog
+Given valid product information
+When the administrator submits the registration form
+Then the product is stored successfully
 
-Scenario: Missing required fields
-Given the administrator is on the registration page
-When required information is missing
-And the save button is pressed
-Then the system displays validation errors
+Scenario: Missing required information
+Given incomplete product information
+When the administrator submits the registration form
+Then the system displays a validation error
+
+Scenario: Duplicate product code
+Given a product code already exists
+When the administrator registers a new product
+Then the registration is rejected
 ```
 
-### User Story US-03 – Update Product
+### Tasks
 
-**As an administrator, I want to update product information so that the catalog remains accurate.**
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Design product structure | Itzel Trujillo | 2 |
+| Create product seed data | Vanessa Aponte | 2 |
+| Develop insert queries | Paolette Calvo | 3 |
+| Integrate registration module | Daiana Dector | 2 |
+| Validate functionality | Valentina Contreras | 1 |
 
-**Story Points:** 3
+---
 
-#### Tasks
+## User Story US-02 – View Products
 
-| Task | Responsible |
-|---------|-------------|
-| Create update form | Paolette Calvo|
-| Develop Update API | Daiana Dector|
-| Validate modifications | Daiana Dector |
-| Functional testing | Valentina Contreras|
+### Story
 
-#### Acceptance Criteria
+As a Store Administrator, I want to view all registered products so that I can monitor inventory information.
+
+### Acceptance Criteria
+
+```gherkin
+Feature: Product Visualization
+
+Scenario: Display products
+Given products exist in the database
+When the administrator accesses the catalog
+Then all products are displayed
+
+Scenario: Empty catalog
+Given no products exist
+When the administrator accesses the catalog
+Then a message is displayed
+
+Scenario: View product details
+Given products exist
+When the administrator selects a product
+Then detailed information is displayed
+```
+
+### Tasks
+
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Design product view | Itzel Trujillo | 1 |
+| Generate test data | Vanessa Aponte | 1 |
+| Create retrieval queries | Paolette Calvo | 3 |
+| Integrate visualization module | Daiana Dector | 2 |
+| Validate functionality | Valentina Contreras | 1 |
+
+---
+
+## User Story US-03 – Update Product
+
+### Story
+
+As a Store Administrator, I want to update product information so that inventory records remain accurate.
+
+### Acceptance Criteria
 
 ```gherkin
 Feature: Product Update
 
-Scenario: Update product information
-Given a product exists in the catalog
-When the administrator modifies its information
-And saves the changes
-Then the system updates the product successfully
+Scenario: Successful update
+Given a product exists
+When the administrator modifies product information
+Then changes are stored successfully
+
+Scenario: Invalid data
+Given invalid information
+When the administrator updates the product
+Then the system rejects the update
+
+Scenario: Product not found
+Given the product does not exist
+When an update is attempted
+Then an error message is displayed
 ```
 
-### User Story US-04 – Delete Product
+### Tasks
 
-**As an administrator, I want to remove products so that unavailable items are not displayed.**
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Design update process | Itzel Trujillo | 1 |
+| Prepare update datasets | Vanessa Aponte | 1 |
+| Develop update queries | Paolette Calvo | 3 |
+| Integrate update module | Daiana Dector | 2 |
+| Validate functionality | Valentina Contreras | 1 |
 
-**Story Points:** 3
+---
 
-#### Tasks
+## User Story US-04 – Delete Product
 
-| Task | Responsible |
-|---------|-------------|
-| Create delete functionality | Daiana Dector |
-| Add confirmation dialog | Paolette calvo|
-| Remove product from database | Daiana Dector |
-| Functional testing | Valentina Contreras|
+### Story
 
-#### Acceptance Criteria
+As a Store Administrator, I want to remove products from the catalog so that obsolete products are no longer available.
+
+### Acceptance Criteria
 
 ```gherkin
 Feature: Product Deletion
 
-Scenario: Delete a product
-Given a product exists in the catalog
-When the administrator selects delete
-And confirms the action
-Then the product is removed from the catalog
+Scenario: Successful deletion
+Given a product exists
+When the administrator deletes the product
+Then the product is removed
+
+Scenario: Product not found
+Given the product does not exist
+When deletion is attempted
+Then an error message is displayed
+
+Scenario: Deletion confirmation
+Given a product exists
+When deletion is requested
+Then the system requests confirmation
 ```
 
----
+### Tasks
 
-## 4. Weekly Execution Roadmap
-
-| Hours | Activities |
-|------|------------|
-| 1 hour | Sprint Planning, repository setup, database configuration |
-| 2 hours | Catalog interface development |
-| 2 hours | Product registration module |
-| 2 hours | Update and delete product functionalities |
-| 1 hour| Functional testing, bug fixes, Sprint Review and Retrospective |
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Design deletion workflow | Itzel Trujillo | 1 |
+| Create testing records | Vanessa Aponte | 1 |
+| Develop delete queries | Paolette Calvo | 3 |
+| Integrate delete module | Daiana Dector | 2 |
+| Validate functionality | Valentina Contreras | 1 |
 
 ---
 
-## 5. Action Plan
+# 4. Weekly Execution Roadmap
 
-| Day | Activity | Responsible | Expected Result |
-|------|------------|-------------|----------------|
-| 1 hour| Sprint Planning and task assignment | Scrum Team | Approved Sprint Backlog |
-| 1 hour | Configure database and repository | Developers | Development environment ready |
-| 2 hours | Develop catalog module | Developer 1 | Product catalog functional |
-| 2 hours | Develop registration functionality | Developer 2 | Products can be added |
-| 2 hours | Implement update and delete operations | Developers | Full CRUD functionality completed |
-| 1 hour | Execute Gherkin scenarios | Product Owner | Acceptance criteria validated |
-| 1 hour| Correct defects and optimize system | Scrum Team | Stable sprint increment |
+| Week | NoSQL Concept | Project Phase | Activity | Responsible | Deliverable |
+|--------|--------|--------|--------|--------|--------|
+| Week 1 | Rules & Tools Configuration | Setup | Install and configure VS Code, MongoDB Compass, Git, and initialize repository | Valentina Contreras | README.md |
+| Week 2 | JSON/BSON Syntax | Discovery | Define project scope, requirements, business rules, and JSON structure | Entire Team | portfolio/me.json |
+| Week 3 | Schema Design (Embedding vs Referencing) | Modeling | Design collections, relationships, and create Mermaid schema diagram | Itzel Trujillo | docs/schema.mmd |
+| Week 4 | MongoDB Compass & Atlas | Integration | Configure database connection and create collections | Daiana Dector | scripts/01_create_collections.js |
+| Week 5 | CRUD Create (insertOne, insertMany) | Seeding | Generate sample data, load seed data, and validate insertion queries | Vanessa Aponte & Paolette Calvo | data/seeds.json |
 
 ---
 
-## 6. Validation Strategy
+# 5. Action Plan
+
+| Activity | Responsible | Estimated Hours |
+|------------|------------|------------|
+| Install and configure VS Code, MongoDB Compass, and Git | Valentina Contreras | 4 |
+| Define project scope, requirements, and JSON structure | Entire Team | 6 |
+| Design database schema and Mermaid diagram | Itzel Trujillo | 8 |
+| Configure database connection and create collections | Daiana Dector | 6 |
+| Generate and load seed data | Vanessa Aponte | 4 |
+| Develop and validate insertion queries | Paolette Calvo | 4 |
+
+**Total Estimated Workload: 32 Hours**
+
+---
+
+# 6. Validation Strategy
 
 ### Functional Validation
 
-- Verify product listing.
 - Verify product registration.
+- Verify product visualization.
 - Verify product update.
 - Verify product deletion.
 
 ### Technical Validation
 
-- Database operations testing.
-- API endpoint testing.
-- Frontend-backend integration testing.
+- Query execution testing.
+- Collection validation.
+- Database connectivity testing.
+- CRUD integration testing.
 
 ### Acceptance Validation
 
-All Gherkin scenarios must pass successfully before sprint closure.
+- All 12 Gherkin scenarios must pass successfully.
+- Product administration workflows must be operational.
+- Repository artifacts must be completed and uploaded.
 
 ---
 
-## 7. Definition of Done
+# 7. Definition of Done (DoD)
 
-### Sprint Completion Checklist
+## Sprint Completion Checklist
 
-- [ ] Product catalog module operational
-- [ ] Product registration operational
-- [ ] Product update operational
-- [ ] Product deletion operational
-- [ ] All acceptance criteria satisfied
-- [ ] All 14 Gherkin scenarios executed successfully
-- [x] Integration tests completed successfully
+
+- [ ] VS Code installed and configured
+- [ ] MongoDB Compass installed
+- [ ] Git repository initialized
+- [ ] README.md completed
+
+- [ ] Project scope defined
+- [ ] Requirements documented
+- [ ] portfolio/me.json completed
+
+- [ ] Database schema designed
+- [ ] Mermaid diagram created
+- [ ] docs/schema.mmd uploaded
+
+- [ ] Database connection configured
+- [ ] Collections created successfully
+- [ ] scripts/01_create_collections.js uploaded
+    
+- [ ] Seed data generated
+- [ ] Seed data loaded successfully
+- [ ] data/seeds.json uploaded
+
+- [ ] Product registration implemented
+- [ ] Product visualization implemented
+- [ ] Product update implemented
+- [ ] Product deletion implemented
+- [ ] All Gherkin scenarios executed successfully
+- [ ] Integration testing completed
+
 - [ ] Documentation updated
-- [ ] Code uploaded and merged into repository
+- [ ] Code uploaded to repository
 - [ ] Sprint Review completed
 - [ ] Sprint Retrospective completed
-- [ ] Product Owner approval obta
+- [ ] Product Owner approval obtained
