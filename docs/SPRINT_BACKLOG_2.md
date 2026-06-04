@@ -57,13 +57,14 @@ Then the system displays an empty result
 
 | Task | Responsible | Duration (Hours) |
 |---------|---------|---------|
-| Design aggregation model | Itzel Trujillo | 8 |
-| Prepare analytics dataset | Vanessa Aponte | 8 |
-| Develop $match, $group and $count pipelines | Paolette Calvo | 12 |
+| Design aggregation model | Itzel Trujillo | 8
+|
+| Prepare analytics dataset | Vanessa Aponte | 8
+|
+| Develop $match, $group and $count pipelines | Paolette Calvo | 12|
 | Integrate analytics module | Daiana Dector | 8 |
 | Execute validation tests | Valentina Contreras | 4 |
 
-**Total: 40 Hours**
 
 ---
 
@@ -104,8 +105,6 @@ Then related information is merged successfully
 | Integrate reporting module | Daiana Dector | 8 |
 | Validate generated reports | Valentina Contreras | 4 |
 
-**Total: 40 Hours**
-
 ---
 
 ## User Story US-07 – Optimize Query Performance
@@ -145,7 +144,7 @@ Then the execution plan is displayed
 | Integrate optimization tests | Daiana Dector | 8 |
 | Validate performance improvements | Valentina Contreras | 4 |
 
-**Total: 40 Hours**
+
 
 ---
 
@@ -175,12 +174,11 @@ Then stakeholders can review the complete solution
 
 | Task | Responsible | Duration (Hours) |
 |---------|---------|---------|
-| Final analytics integration | Daiana Dector | 4 |
-| System validation testing | Valentina Contreras | 2 |
-| Documentation updates | Entire Team | 2 |
-| Demo preparation | Entire Team | 2 |
+| Final analytics integration | Daiana Dector | 8|
+| System validation testing | Valentina Contreras | 8 |
+| Documentation updates | Entire Team | 6 |
+| Demo preparation | Entire Team | 8 |
 
-**Total: 10 Hours**
 
 ---
 
@@ -202,12 +200,11 @@ Then stakeholders can review the complete solution
 
 | Activity | Responsible | Estimated Hours |
 |------------|------------|------------|
-| Design aggregation and reporting models | Itzel Trujillo | 24 |
-| Generate datasets and benchmark data | Vanessa Aponte | 24 |
-| Develop aggregation, reporting and optimization queries | Paolette Calvo | 36 |
-| Integrate analytics modules | Daiana Dector | 28 |
-| Validation, testing and sprint monitoring | Valentina Contreras | 26 |
-| Documentation and presentation preparation | Entire Team | 12 |
+| Design analytics models, reporting structures, and validation reviews | Itzel Trujillo | 28 |
+| Generate datasets, benchmark data, and result verification | Vanessa Aponte | 28 |
+| Develop aggregation, reporting, optimization, and integration queries | Paolette Calvo | 40 |
+| Integrate analytics modules and support final deployment | Daiana Dector | 32 |
+| Functional validation, sprint monitoring, and acceptance testing | Valentina Contreras | 22 |
 
 | | **Total Estimated Workload** | **150 Hours** |
 
