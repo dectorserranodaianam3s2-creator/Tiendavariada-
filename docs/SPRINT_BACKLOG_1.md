@@ -251,7 +251,6 @@ Then the system requests confirmation
 - [x] Mermaid diagram created
 - [x] docs/schema.mmd uploaded
 
-- [ ] Database connection configured
 - [x] Collections created successfully
 - [x] scripts/01_create_collections.js uploaded
     
@@ -263,11 +262,11 @@ Then the system requests confirmation
 - [x] Product visualization implemented
 - [x] Product update implemented
 - [x] Product deletion implemented
-- [ ] All Gherkin scenarios executed successfully
-- [ ] Integration testing completed
+- [x] All Gherkin scenarios executed successfully
+- [x] Integration testing completed
 
 - [x] Documentation updated
 - [x] Code uploaded to repository
-- [ ] Sprint Review completed
-- [ ] Sprint Retrospective completed
+- [x] Sprint Review completed
+- [x] Sprint Retrospective completed
 - [x] Product Owner approval obtained
