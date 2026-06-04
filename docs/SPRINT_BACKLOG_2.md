@@ -19,8 +19,8 @@ Implement business analytics through MongoDB Aggregation Framework, generate adv
 | Sprint Duration | 5 Weeks |
 | Team Members | 5 |
 | Total Sprint Capacity | 160 Hours |
-| Estimated Workload | 32 Hours |
-| Buffer | 128 Hours |
+| Estimated Workload | 150 Hours |
+| Buffer | 10 Hours |
 
 ---
 
@@ -57,13 +57,13 @@ Then the system displays an empty result
 
 | Task | Responsible | Duration (Hours) |
 |---------|---------|---------|
-| Design aggregation model | Itzel Trujillo | 2 |
-| Prepare analytics dataset | Vanessa Aponte | 2 |
-| Develop $match, $group and $count pipelines | Paolette Calvo | 4 |
-| Integrate analytics module | Daiana Dector | 2 |
-| Execute validation tests | Valentina Contreras | 1 |
+| Design aggregation model | Itzel Trujillo | 8 |
+| Prepare analytics dataset | Vanessa Aponte | 8 |
+| Develop $match, $group and $count pipelines | Paolette Calvo | 12 |
+| Integrate analytics module | Daiana Dector | 8 |
+| Execute validation tests | Valentina Contreras | 4 |
 
-**Total: 11 Hours**
+**Total: 40 Hours**
 
 ---
 
@@ -98,13 +98,13 @@ Then related information is merged successfully
 
 | Task | Responsible | Duration (Hours) |
 |---------|---------|---------|
-| Design reporting structure | Itzel Trujillo | 2 |
-| Prepare reporting dataset | Vanessa Aponte | 2 |
-| Develop $project, $sort, $limit and $lookup pipelines | Paolette Calvo | 3 |
-| Integrate reporting module | Daiana Dector | 2 |
-| Validate generated reports | Valentina Contreras | 2 |
+| Design reporting structure | Itzel Trujillo | 8 |
+| Prepare reporting dataset | Vanessa Aponte | 8 |
+| Develop $project, $sort, $limit and $lookup pipelines | Paolette Calvo | 12 |
+| Integrate reporting module | Daiana Dector | 8 |
+| Validate generated reports | Valentina Contreras | 4 |
 
-**Total: 11 Hours**
+**Total: 40 Hours**
 
 ---
 
@@ -139,11 +139,46 @@ Then the execution plan is displayed
 
 | Task | Responsible | Duration (Hours) |
 |---------|---------|---------|
-| Analyze query performance | Itzel Trujillo | 2 |
-| Generate benchmark dataset | Vanessa Aponte | 2 |
-| Create indexes and execute explain() | Paolette Calvo | 1 |
-| Integrate optimization tests | Daiana Dector | 2 |
-| Validate performance improvements | Valentina Contreras | 3 |
+| Analyze query performance | Itzel Trujillo | 8 |
+| Generate benchmark dataset | Vanessa Aponte | 8 |
+| Create indexes and execute explain() | Paolette Calvo | 12 |
+| Integrate optimization tests | Daiana Dector | 8 |
+| Validate performance improvements | Valentina Contreras | 4 |
+
+**Total: 40 Hours**
+
+---
+
+## User Story US-08 – Final Analytics Integration
+
+### Story
+
+As a Product Owner, I want all analytics components integrated so that the final solution works as a complete business intelligence module.
+
+### Acceptance Criteria
+
+```gherkin
+Feature: Analytics Integration
+
+Scenario: Complete integration
+Given all analytics modules are finished
+When integration is executed
+Then all modules work together successfully
+
+Scenario: Generate final demo
+Given all reports are available
+When the demo is prepared
+Then stakeholders can review the complete solution
+```
+
+### Tasks
+
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Final analytics integration | Daiana Dector | 4 |
+| System validation testing | Valentina Contreras | 2 |
+| Documentation updates | Entire Team | 2 |
+| Demo preparation | Entire Team | 2 |
 
 **Total: 10 Hours**
 
@@ -153,13 +188,13 @@ Then the execution plan is displayed
 
 | Week | NoSQL Concept | Project Phase | Activity | Responsible | Hours | Deliverable |
 |--------|--------|--------|--------|--------|--------|--------|
-| Week 1 | Aggregation Intro ($match, $group, $count) | Analytics | Create aggregation pipelines and statistical reports | Paolette Calvo & Itzel Trujillo | 8 | queries/agg_01_stats.mongodb |
-| Week 2 | Advanced Pipelines ($project, $sort, $limit, $lookup) | Reporting | Develop advanced business reports | Paolette Calvo & Daiana Dector | 8 | queries/agg_02_reports.mongodb |
-| Week 3 | Indexes & Performance (createIndex, explain()) | Optimization | Create indexes and evaluate performance improvements | Paolette Calvo & Vanessa Aponte | 6 | docs/performance_audit.md |
-| Week 4 | Final System Integration | Demo Day | Integrate reporting modules and prepare project presentation | Entire Team | 6 | RELEASE v3.0 |
-| Week 5 | Final Evaluation | Graduation | Repository review, documentation validation and project closure | Valentina Contreras | 4 | Final Repository |
+| Week 1 | Aggregation Framework ($match, $group, $count) | Analytics | Develop sales analytics pipelines and statistics reports | Paolette Calvo & Itzel Trujillo | 30 | queries/agg_01_stats.mongodb |
+| Week 2 | Advanced Pipelines ($project, $sort, $limit, $lookup) | Reporting | Create advanced reporting functionality | Paolette Calvo & Daiana Dector | 30 | queries/agg_02_reports.mongodb |
+| Week 3 | Indexes & Performance | Optimization | Implement indexes and performance evaluation | Paolette Calvo & Vanessa Aponte | 30 | docs/performance_audit.md |
+| Week 4 | Final Integration & Testing | Demo Day | Integrate modules and perform testing | Entire Team | 30 | RELEASE_v3.0.md |
+| Week 5 | Documentation & Evaluation | Graduation | Final repository review and presentation | Entire Team | 30 | FINAL_REPOSITORY.md |
 
-**Total Weekly Hours: 32**
+**Total Weekly Hours: 150**
 
 ---
 
@@ -167,66 +202,70 @@ Then the execution plan is displayed
 
 | Activity | Responsible | Estimated Hours |
 |------------|------------|------------|
-| Design aggregation pipelines and analytics model | Itzel Trujillo | 6 |
-| Generate analytics and benchmark datasets | Vanessa Aponte | 6 |
-| Develop aggregation, reporting and optimization queries | Paolette Calvo | 8 |
-| Integrate analytics and reporting modules | Daiana Dector | 6 |
-| Validation, sprint monitoring and final review | Valentina Contreras | 6 |
+| Design aggregation and reporting models | Itzel Trujillo | 24 |
+| Generate datasets and benchmark data | Vanessa Aponte | 24 |
+| Develop aggregation, reporting and optimization queries | Paolette Calvo | 36 |
+| Integrate analytics modules | Daiana Dector | 28 |
+| Validation, testing and sprint monitoring | Valentina Contreras | 26 |
+| Documentation and presentation preparation | Entire Team | 12 |
 
-| | **Total Estimated Workload** | **32 Hours** |
+| | **Total Estimated Workload** | **150 Hours** |
 
 ---
 
 # 6. Validation Strategy
 
-### Functional Validation
+## Functional Validation
 
 - Verify aggregation pipelines.
-- Verify statistical reports.
 - Verify advanced reports.
-- Verify query optimization.
+- Verify analytics integration.
+- Verify performance optimization.
 
-### Technical Validation
+## Technical Validation
 
 - Aggregation Framework testing.
 - Pipeline validation.
 - Index validation.
 - explain() execution testing.
+- Integration testing.
 
-### Acceptance Validation
+## Acceptance Validation
 
 - All Gherkin scenarios pass successfully.
 - Reports generate correct results.
 - Performance improvements are documented.
+- Demo presentation is completed.
 - Repository artifacts are uploaded.
 
 ---
 
 # 7. Definition of Done (DoD)
 
-- [x] Aggregation pipelines implemented
-- [x] Statistical reports generated
-- [x] queries/agg_01_stats.mongodb uploaded
+- [ ] Aggregation pipelines implemented
+- [ ] Sales statistics generated
+- [ ] queries/agg_01_stats.mongodb uploaded
+      
+- [ ] Advanced reporting pipelines implemented
+- [ ] Reports generated successfully
+- [ ] queries/agg_02_reports.mongodb uploaded
 
-- [x] Advanced pipelines implemented
-- [x] Business reports generated
-- [x] queries/agg_02_reports.mongodb uploaded
-
-- [x] Indexes created successfully
+- [ ] Indexes created successfully
 - [ ] explain() analysis completed
 - [ ] Performance audit completed
-- [x] docs/performance_audit.md uploaded
+- [ ] docs/performance_audit.md uploaded
 
-- [x] Modules integrated
-- [x] Presentation completed
-- [x] RELEASE v3.0 created
+- [ ] Modules integrated successfully
+- [ ] End-to-end testing completed
+- [ ] RELEASE_v3.0.md created
 
-- [x] All Gherkin scenarios passed
-- [x] Functional testing completed
-- [x] Performance testing completed
-
+- [ ] All Gherkin scenarios passed
+- [ ] Functional testing completed
+- [ ] Performance testing completed
+- [ ] Integration testing completed
+      
 - [ ] Documentation updated
 - [ ] Repository finalized
-- [x] Sprint Review completed
+- [ ] Sprint Review completed
 - [ ] Sprint Retrospective completed
-- [x] Product Owner approval obtained
+- [ ] Product Owner approval obtained
