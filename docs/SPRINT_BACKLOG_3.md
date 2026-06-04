@@ -1,76 +1,81 @@
-Sprint Backlog – Sprint 3: Security, Reliability & Final Delivery
+# Sprint Backlog – Sprint 3: Security, Reliability & Final Delivery
 
-Product Goal Reference
+## Product Goal Reference
 
-Ensure the retail store management system is secure, reliable, and production-ready through validation mechanisms, transaction management, backup procedures, and final project integration.
-
----
-
-1. Sprint Goal
-
-Implement security controls, transaction management, backup and recovery procedures, and complete the final integration and delivery of the retail store management system.
+Ensure the retail store management system is secure, reliable, and production-ready through validation mechanisms, transaction management, backup procedures, and final deployment.
 
 ---
 
-2. Sprint Parameters & Capacity Plan
+# 1. Sprint Goal
 
-Parameter| Value
-Sprint Duration| 5 Weeks
-Team Members| 5
-Total Sprint Capacity| 160 Hours
-Estimated Workload| 32 Hours
-Buffer| 128 Hours
+Implement validation rules, transaction management, backup and recovery procedures, and complete the final deployment of the retail store management system.
 
 ---
 
-3. Selected User Stories
+# 2. Sprint Parameters & Capacity Plan
 
-User Story US-08 – Validate Product Information
+| Parameter | Value |
+|------------|---------|
+| Sprint Duration | 5 Weeks |
+| Team Members | 5 |
+| Total Sprint Capacity | 160 Hours |
+| Estimated Workload | 150 Hours |
+| Buffer | 10 Hours |
 
-Story
+---
 
-As a Store Administrator, I want product information to be validated so that incorrect data cannot be stored in the system.
+# 3. Selected User Stories
 
-Acceptance Criteria
+## User Story US-09 – Product Validation
 
+### Story
+
+As a Store Administrator, I want the system to validate product information so that invalid records cannot be stored.
+
+### Acceptance Criteria
+
+```gherkin
 Feature: Product Validation
 
-Scenario: Valid information submitted
+Scenario: Valid product information
 Given valid product data
 When the administrator saves the product
-Then the information is stored successfully
+Then the product is stored successfully
 
 Scenario: Missing required field
-Given incomplete product information
-When the administrator submits the form
+Given incomplete product data
+When the administrator saves the product
 Then a validation error is displayed
 
-Scenario: Invalid data format
-Given incorrect product data
+Scenario: Invalid format
+Given invalid field values
 When the administrator saves the product
 Then the operation is rejected
+```
 
-Tasks
+### Tasks
 
-Task| Responsible| Duration (Hours)
-Design validation rules| Itzel Trujillo| 2
-Prepare validation datasets| Vanessa Aponte| 2
-Implement validation queries| Paolette Calvo| 4
-Integrate validation module| Daiana Dector| 2
-Execute validation tests| Valentina Contreras| 1
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Design validation rules | Itzel Trujillo | 8 |
+| Create validation datasets | Vanessa Aponte | 8 |
+| Implement validation queries | Paolette Calvo | 12 |
+| Integrate validation module | Daiana Dector | 8 |
+| Execute validation tests | Valentina Contreras | 4 |
 
-Total: 11 Hours
+**Total: 40 Hours**
 
 ---
 
-User Story US-09 – Manage Transactions
+## User Story US-10 – Transaction Management
 
-Story
+### Story
 
-As a Store Administrator, I want transactions to be executed safely so that inventory and sales records remain consistent.
+As a Store Administrator, I want transactions to be executed safely so that data consistency is guaranteed.
 
-Acceptance Criteria
+### Acceptance Criteria
 
+```gherkin
 Feature: Transaction Management
 
 Scenario: Successful transaction
@@ -78,37 +83,40 @@ Given valid transaction data
 When the transaction executes
 Then all operations are completed successfully
 
-Scenario: Transaction failure
-Given an unexpected error occurs
-When the transaction executes
-Then all changes are rolled back
+Scenario: Transaction rollback
+Given an error occurs
+When the transaction fails
+Then all changes are reverted
 
-Scenario: Verify transaction consistency
-Given multiple operations occur
+Scenario: Consistent data
+Given multiple operations are executed
 When the transaction finishes
-Then data remains consistent
+Then data integrity is maintained
+```
 
-Tasks
+### Tasks
 
-Task| Responsible| Duration (Hours)
-Design transaction workflow| Itzel Trujillo| 2
-Create transaction datasets| Vanessa Aponte| 2
-Develop transaction scripts| Paolette Calvo| 3
-Integrate transaction module| Daiana Dector| 2
-Validate transaction execution| Valentina Contreras| 2
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Design transaction workflow | Itzel Trujillo | 8 |
+| Generate transaction datasets | Vanessa Aponte | 8 |
+| Develop transaction scripts | Paolette Calvo | 12 |
+| Integrate transaction module | Daiana Dector | 8 |
+| Validate transaction execution | Valentina Contreras | 4 |
 
-Total: 11 Hours
+**Total: 40 Hours**
 
 ---
 
-User Story US-10 – Backup and Recovery
+## User Story US-11 – Backup and Recovery
 
-Story
+### Story
 
-As a Store Administrator, I want backup and recovery procedures so that business information is protected.
+As a Store Administrator, I want backup and recovery procedures so that data can be restored when necessary.
 
-Acceptance Criteria
+### Acceptance Criteria
 
+```gherkin
 Feature: Backup and Recovery
 
 Scenario: Create backup
@@ -117,109 +125,137 @@ When a backup is executed
 Then data is stored successfully
 
 Scenario: Restore backup
-Given a backup exists
-When recovery is requested
-Then data is restored successfully
+Given a backup file exists
+When the administrator restores data
+Then the information is recovered successfully
 
 Scenario: Verify backup integrity
-Given a backup file exists
+Given a backup exists
 When validation is executed
 Then backup integrity is confirmed
+```
 
-Tasks
+### Tasks
 
-Task| Responsible| Duration (Hours)
-Design backup strategy| Itzel Trujillo| 2
-Generate backup datasets| Vanessa Aponte| 2
-Implement backup and restore scripts| Paolette Calvo| 1
-Integrate backup procedures| Daiana Dector| 2
-Validate backup recovery| Valentina Contreras| 3
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Design backup strategy | Itzel Trujillo | 8 |
+| Generate backup datasets | Vanessa Aponte | 8 |
+| Implement backup and recovery scripts | Paolette Calvo | 12 |
+| Integrate backup procedures | Daiana Dector | 8 |
+| Validate backup recovery | Valentina Contreras | 4 |
 
-Total: 10 Hours
-
----
-
-4. Weekly Execution Roadmap
-
-Week| NoSQL Concept| Project Phase| Activity| Responsible| Hours| Deliverable
-Week 1| Validation Rules| Security| Implement validation mechanisms and error handling| Paolette Calvo & Itzel Trujillo| 8| scripts/validation_rules.js
-Week 2| Transactions| Reliability| Develop transaction management workflows| Paolette Calvo & Daiana Dector| 8| scripts/transactions.js
-Week 3| Backup & Recovery| Protection| Create backup and restore procedures| Paolette Calvo & Vanessa Aponte| 6| docs/backup_recovery.md
-Week 4| Final Integration| Integration| Integrate all modules and perform final testing| Entire Team| 6| RELEASE_v4.0.md
-Week 5| Project Delivery| Closure| Final repository review and project delivery| Valentina Contreras| 4| FINAL_DELIVERY.md
-
-Total Weekly Hours: 32
+**Total: 40 Hours**
 
 ---
 
-5. Action Plan
+## User Story US-12 – Final Integration & Deployment
 
-Activity| Responsible| Estimated Hours
-Design validation and security rules| Itzel Trujillo| 6
-Generate validation and backup datasets| Vanessa Aponte| 6
-Develop validation, transaction, and backup scripts| Paolette Calvo| 8
-Integrate modules and deployment preparation| Daiana Dector| 6
-Validation, sprint monitoring, and final review| Valentina Contreras| 6
+### Story
 
-| | Total Estimated Workload | 32 Hours |
+As a Product Owner, I want the complete solution integrated and deployed so that stakeholders can evaluate the final product.
+
+### Acceptance Criteria
+
+```gherkin
+Feature: Final Deployment
+
+Scenario: Complete integration
+Given all modules are finished
+When integration is executed
+Then the system operates correctly
+
+Scenario: Final presentation
+Given the project is completed
+When stakeholders review the system
+Then all requirements are demonstrated successfully
+```
+
+### Tasks
+
+| Task | Responsible | Duration (Hours) |
+|---------|---------|---------|
+| Integrate all modules | Daiana Dector | 8 |
+| Execute final validation | Valentina Contreras | 6 |
+| Verify data consistency | Itzel Trujillo | 4 |
+| Prepare final datasets | Vanessa Aponte | 4 |
+| Support deployment and fixes | Paolette Calvo | 4 |
+| Prepare presentation and documentation | Entire Team | 4 |
+
+**Total: 30 Hours**
 
 ---
 
-6. Validation Strategy
+# 4. Weekly Execution Roadmap
 
-Functional Validation
+| Week | NoSQL Concept | Project Phase | Activity | Responsible | Hours | Deliverable |
+|--------|--------|--------|--------|--------|--------|--------|
+| Week 1 | Validation Rules | Security | Implement validation mechanisms | Paolette Calvo & Itzel Trujillo | 30 | scripts/validation_rules.js |
+| Week 2 | Transactions | Reliability | Implement transaction workflows | Paolette Calvo & Daiana Dector | 30 | scripts/transactions.js |
+| Week 3 | Backup & Recovery | Protection | Create backup and recovery procedures | Paolette Calvo & Vanessa Aponte | 30 | docs/backup_recovery.md |
+| Week 4 | Final Integration | Integration | Integrate all modules and execute testing | Entire Team | 30 | RELEASE_v4.0.md |
+| Week 5 | Deployment & Delivery | Closure | Final presentation and repository delivery | Entire Team | 30 | FINAL_DELIVERY.md |
 
-- Verify validation mechanisms.
+**Total Weekly Hours: 150**
+
+---
+
+# 5. Action Plan
+
+| Activity | Responsible | Estimated Hours |
+|------------|------------|------------|
+| Design validation, transaction and backup models | Itzel Trujillo | 28 |
+| Generate datasets and perform data verification | Vanessa Aponte | 28 |
+| Develop validation, transaction and recovery scripts | Paolette Calvo | 40 |
+| Integrate modules and support deployment | Daiana Dector | 32 |
+| Validation, testing and sprint monitoring | Valentina Contreras | 22 |
+
+| | **Total Estimated Workload** | **150 Hours** |
+
+---
+
+# 6. Validation Strategy
+
+## Functional Validation
+
+- Verify validation rules.
 - Verify transaction execution.
-- Verify backup generation.
+- Verify backup creation.
 - Verify backup recovery.
+- Verify final deployment.
 
-Technical Validation
+## Technical Validation
 
-- Validation rule testing.
+- Validation testing.
 - Transaction testing.
 - Recovery testing.
 - Integration testing.
 
-Acceptance Validation
+## Acceptance Validation
 
 - All Gherkin scenarios pass successfully.
-- Recovery procedures function correctly.
-- Final system integration completed.
-- Repository artifacts uploaded.
+- Final system operates correctly.
+- Documentation is complete.
+- Repository artifacts are uploaded.
 
 ---
 
-7. Definition of Done (DoD)
+# 7. Definition of Done (DoD)
 
-Sprint Completion Checklist
-
-Security
-
-- [ ] Validation rules implemented
-- [ ] Validation tests completed
-- [ ] scripts/validation_rules.js uploaded
-
-- [ ] Transaction workflows implemented
-- [ ] Rollback tests completed
-- [ ] scripts/transactions.js uploaded
-
-- [ ] Backup procedures implemented
-- [ ] Recovery procedures validated
-- [ ] docs/backup_recovery.md uploaded
-
-- [ ] All modules integrated
-- [ ] Final testing completed
-- [ ] RELEASE_v4.0.md created
-
-- [ ] All Gherkin scenarios passed
-- [ ] Functional testing completed
-- [ ] Integration testing completed
-
-- [ ] Documentation updated
-- [ ] Repository finalized
-- [ ] Sprint Review completed
-- [ ] Sprint Retrospective completed
-- [ ] Product Owner approval obtained
-
-
+- [x] Validation rules implemented
+- [x] Validation tests completed
+- [x] scripts/validation_rules.js uploaded
+- [x] Transaction workflows implemented
+- [x] Rollback testing completed
+- [x] scripts/transactions.js uploaded
+- [x] Backup procedures implemented
+- [x] Recovery procedures validated
+- [x] docs/backup_recovery.md uploaded
+- [x] All modules integrated
+- [x] Final testing completed
+- [x] RELEASE_v4.0.md created
+- [x] Documentation updated
+- [x] Repository finalized
+- [x] Sprint Review completed
+- [x] Sprint Retrospective completed
+- [x] Product Owner approval obtained
