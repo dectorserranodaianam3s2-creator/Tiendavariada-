@@ -180,14 +180,11 @@ Import `.json` files if included in the project.
 # 🗄️ Arquitectura de la Base de Datos
 
 El diseño de la base de datos de Variety Store fue modelado para gestionar de manera eficiente usuarios, productos, categorías, pedidos, reseñas y pagos. Aunque el proyecto utiliza MongoDB como base de datos no relacional, el siguiente Diagrama Entidad-Relación se utilizó como referencia para la estructura de los datos.
+
 ## 📊 Diagrama Entidad-Relación
 
 ```mermaid
 erDiagram
-
-    USER ||--o{ ORDER : realiza
-    ORDER ||--o{ ORDER_DETAIL : contiene
-    ...
 
     USER ||--o{ ORDER : realiza
     ORDER ||--o{ ORDER_DETAIL : contiene
@@ -201,7 +198,7 @@ erDiagram
         int id_user PK
         string nombre
         string correo
-        string contraseña
+        string contrasena
     }
 
     PRODUCT {
@@ -251,6 +248,7 @@ erDiagram
         int id_order FK
     }
 ```
+
 
 # 💻 System Usage
 
